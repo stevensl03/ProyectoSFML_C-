@@ -52,12 +52,12 @@ void Personaje::update(){
     if (_sprite.getGlobalBounds().top < 0) {
         _sprite.setPosition(_sprite.getPosition().x, _sprite.getOrigin().y);
     }
-    if (_sprite.getPosition().x + _sprite.getGlobalBounds().width > 1200) {
-        _sprite.setPosition(1200 - _sprite.getGlobalBounds().width, _sprite.getPosition().y);
- 
+    if (_sprite.getPosition().x + _sprite.getGlobalBounds().width / 2 > 1200) {
+        _sprite.setPosition(1200 - _sprite.getGlobalBounds().width / 2, _sprite.getPosition().y);
+
     }
-    if (_sprite.getPosition().y + _sprite.getGlobalBounds().width > 800) {
-        _sprite.setPosition(_sprite.getPosition().x, 800 - _sprite.getGlobalBounds().width);
+    if (_sprite.getPosition().y > 800) {
+        _sprite.setPosition(_sprite.getPosition().x, 800);
     }
 }
 
