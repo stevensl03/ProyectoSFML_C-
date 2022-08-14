@@ -1,46 +1,58 @@
 #include "Personaje.h"
 
+
+
+
+
+
+void Personaje::addVelocity(float velocity){
+    _velocity += {velocity,velocity};
+}
+
 Personaje::Personaje(){
 
-    _velocity = {8,8};
+    _velocity = {4,4};
 
-    _texture.loadFromFile("sonic.png");
+    _texture.loadFromFile("imagenes/sonic.png");
 
     _sprite.setTexture(_texture);
 
-   // _sprite.setOrigin(_sprite.getTexture()->getSize().x / 2.f, _sprite.getTexture()->getSize().y/2.f);
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
+
+    bufferDaño.loadFromFile("sonidos/daño.wav");
+    sonidoDaño.setBuffer(bufferDaño);
 }
 
-Sprite Personaje::get_sprite()
+void Personaje::respawn()
 {
-    return _sprite;
+    _sprite.setPosition(0, 0);
 }
+
+
 
 void Personaje::update(){
 
-    _velocity = { 0, 0 };
-
+     Vector2f velocity = { 0, 0 };
 
     if (Keyboard::isKeyPressed(Keyboard::Up)) {
-        _velocity.y = -4;
+        velocity.y = -_velocity.y;
     }
     if (Keyboard::isKeyPressed(Keyboard::Down)) {
-        _velocity.y = 4;
+        velocity.y = _velocity.y;
     }
     if (Keyboard::isKeyPressed(Keyboard::Left)) {
-        _velocity.x = -4;
+        velocity.x = -_velocity.x;
     }
     if (Keyboard::isKeyPressed(Keyboard::Right)) {
-        _velocity.x = 4;
+        velocity.x = _velocity.x;
 
     }
-    _sprite.move(_velocity);
+    _sprite.move(velocity);
 
-    if (_velocity.x < 0) {
+    if (velocity.x < 0) {
         _sprite.setScale(-1, 1);
     }
-    else if (_velocity.x > 0) {
+    else if (velocity.x > 0) {
         _sprite.setScale(1, 1);
     }
 
@@ -64,3 +76,14 @@ void Personaje::update(){
 void Personaje::draw(RenderTarget& target, RenderStates states)const{
     target.draw(_sprite, states);
 }
+
+FloatRect Personaje::getBounds() const
+{
+    return _sprite.getGlobalBounds();
+}
+
+void Personaje::hited(){
+    sonidoDaño.play();
+    respawn();
+}
+

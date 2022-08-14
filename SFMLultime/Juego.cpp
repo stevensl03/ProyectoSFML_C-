@@ -6,11 +6,44 @@ Juego::Juego(int width, int height, std::string title) {
 	ventana = new RenderWindow(VideoMode(width, height), title);
 	eventos = new Event;
 
+	//Fuente
+	font.loadFromFile("fuente1.ttf");
+	textPuntos.setFont(font);
+	textPuntos.setPosition(10, 0);
+	textPuntos.setFillColor(Color::Red);
+	textVidas.setFont(font);
+	textVidas.setPosition(10,textPuntos.getGlobalBounds().height+40);
+
+	//sonidos
+	bufferGaseosa.loadFromFile("sonidos/bebida.wav");
+	sonidoGaseosa.setBuffer(bufferGaseosa);
+
+	bufferPower.loadFromFile("sonidos/power.wav");
+	sonidoPower.setBuffer(bufferPower);
+
+
+
+
+	//imagen de fondo
+	fondo_text.loadFromFile("imagenes/fondo.jpg");
+	fondo.setTexture(fondo_text);
+
+	//inicializacion de atributos
 	running = true;
 	fps = 60;
+	puntos = 0;
+	vidas = 3;
+	timer = 60 * 5;
 
+	//fps
 	ventana->setFramerateLimit(60);
 
+	//respaws
+	gaseosa.respawn();
+	aumentoVelocidad.respawn();
+	enemyGolemIce.respawn();
+
+	//Bucle del juego
 	gameLoop();
 
 }
@@ -19,12 +52,13 @@ void Juego::gameLoop()
 {
 	while (running) {
 
-		procedorEventos();
+		procesarEventos();
+		ProcesarTexto();
 		dibujar();
 	}
 }
 
-void Juego::procedorEventos()
+void Juego::procesarEventos()
 {
 	while (ventana->pollEvent(*eventos)) {
 		if (eventos->type == Event::Closed) {
@@ -32,7 +66,40 @@ void Juego::procedorEventos()
 		}
 	}
 
+	if (timer > 0) {
+		timer--;
+	}
+
 	sonic.update();
+
+	if (sonic.isCollision(gaseosa)) {
+		sonidoGaseosa.play();
+		puntos++;
+		gaseosa.respawn();
+		
+		
+	}
+	if (timer == 0 && sonic.isCollision(aumentoVelocidad)) {
+		sonidoPower.play();
+		sonic.addVelocity(1);
+		timer = 60 * 5;
+		aumentoVelocidad.respawn();
+	}
+
+	if (sonic.isCollision(enemyGolemIce)) {
+		vidas--;
+
+		if (vidas > 0) {
+			sonic.hited();
+			enemyGolemIce.youDamage();
+		}
+		else {
+			ventana->close();
+		}
+
+	}
+
+	enemyGolemIce.update();
 	//update - actulizar los estados del juego
 
 	//CMD -Joy
@@ -40,13 +107,27 @@ void Juego::procedorEventos()
 
 }
 
+void Juego::ProcesarTexto(){
+	textPuntos.setString("Puntos: " + std::to_string(puntos));
+	textVidas.setString("Vidas: " + std::to_string(vidas));
+}
+
+
 void Juego::dibujar() {
 
 	ventana->clear();
 
 	//draw
+	ventana->draw(fondo);
 	ventana->draw(sonic);
-	// ventana.draw(sonic.get_sprite());
+	ventana->draw(gaseosa);
+	ventana->draw(enemyGolemIce);
+	ventana->draw(textPuntos);
+	ventana->draw(textVidas);
+	if (timer == 0) {
+		ventana->draw(aumentoVelocidad);
+
+	}
 
 	ventana->display();
 }
