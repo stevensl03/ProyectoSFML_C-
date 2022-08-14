@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <ctime>
 #include "config.h"
+#include "ControllerManager.h"
 #include "Personaje.h"
 #include "Item.h"
 #include "Power.h"
@@ -14,12 +15,13 @@ using namespace sf;
 
 class Juego {
 
+	ControllerManager controller;
+
 	RenderWindow* ventana;
 	Event* eventos;
 
 	Font font;
-	Text textPuntos;
-	Text textVidas;
+	Text textPuntos, textVidas, textMensaje;
 
 	Texture fondo_text;
 	Sprite fondo;

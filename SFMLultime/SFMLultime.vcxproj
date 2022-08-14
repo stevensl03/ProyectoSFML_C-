@@ -133,6 +133,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Collisionable.cpp" />
+    <ClCompile Include="ControllerManager.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="Juego.cpp" />
@@ -143,6 +144,7 @@
   <ItemGroup>
     <ClInclude Include="Collisionable.h" />
     <ClInclude Include="config.h" />
+    <ClInclude Include="ControllerManager.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="Juego.h" />

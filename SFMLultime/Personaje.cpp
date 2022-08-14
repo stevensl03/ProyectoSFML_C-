@@ -21,7 +21,6 @@ Personaje::Personaje(){
     _sprite.setOrigin(_sprite.getGlobalBounds().width / 2, _sprite.getGlobalBounds().height);
 
 
-
     _bufferDaño.loadFromFile("sonidos/daño.wav");
     _sonidoDaño.setBuffer(_bufferDaño);
 }
@@ -33,27 +32,28 @@ void Personaje::respawn()
 }
 
 
-void Personaje::cmdComandos(){
+void Personaje::cmdComandos(ControllerManager &controller){
 
     _movePosition = { 0,0};
     _state = PersonajeState::Idle;
 
-    if (Keyboard::isKeyPressed(Keyboard::Up)) {
+    //Keyboard::isKeyPressed(Keyboard::Up
+    if (controller.isPress(ControllerManager::Buttons::Up)) {
         _movePosition.y = -_velocity.y;
         _state = PersonajeState::Move;
     }
 
-    if (Keyboard::isKeyPressed(Keyboard::Down)) {
+    if (controller.isPress(ControllerManager::Buttons::Down)) {
         _movePosition.y = _velocity.y;
         _state = PersonajeState::Move;
     }
 
-    if (Keyboard::isKeyPressed(Keyboard::Left)) {
+    if (controller.isPress(ControllerManager::Buttons::Left)) {
         _movePosition.x = -_velocity.x;
         _state = PersonajeState::Move;
      }
 
-    if (Keyboard::isKeyPressed(Keyboard::Right)) {
+    if (controller.isPress(ControllerManager::Buttons::Right)) {
         _movePosition.x = _velocity.x;
         _state = PersonajeState::Move;
     }

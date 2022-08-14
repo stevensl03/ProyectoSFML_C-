@@ -8,12 +8,22 @@ Juego::Juego(int width, int height, std::string title) {
 
 	//Fuente
 	font.loadFromFile("fuente1.ttf");
+	//texto
 	textPuntos.setFont(font);
 	textPuntos.setPosition(10, 0);
 	textPuntos.setFillColor(Color::Red);
 
 	textVidas.setFont(font);
 	textVidas.setPosition(10,textPuntos.getGlobalBounds().height+40);
+
+	textMensaje.setFont(font);
+	textMensaje.setOrigin(textMensaje.getGlobalBounds().width / 2, textMensaje.getGlobalBounds().height/2);
+	textMensaje.setPosition(WIDTH*0.38, HEIGHT*0.28);
+	textMensaje.setScale(2,2);
+	textMensaje.setFillColor(Color::Red);
+
+
+
 
 	//sonidos
 	bufferGaseosa.loadFromFile("sonidos/bebida.wav");
@@ -68,7 +78,24 @@ void Juego::procesarEventos()
 			ventana->close();
 		}
 	}
+//controllerManager
+	controller.reset();
 
+	if (Keyboard::isKeyPressed(Keyboard::Up)) {
+		controller.setPress(ControllerManager::Buttons::Up);
+	}
+
+	if (Keyboard::isKeyPressed(Keyboard::Down)) {
+		controller.setPress(ControllerManager::Buttons::Down);
+	}
+
+	if (Keyboard::isKeyPressed(Keyboard::Left)) {
+		controller.setPress(ControllerManager::Buttons::Left);
+	}
+
+	if (Keyboard::isKeyPressed(Keyboard::Right)) {
+		controller.setPress(ControllerManager::Buttons::Right);
+	}
 	
 	//CMD -Joy
 
@@ -80,7 +107,7 @@ void Juego::procesarEventos()
 			timer--;
 		}
 
-		sonic.cmdComandos();
+		sonic.cmdComandos(controller);
 		sonic.update();
 
 		if (sonic.isCollision(gaseosa)) {
@@ -119,6 +146,7 @@ void Juego::procesarEventos()
 void Juego::ProcesarTexto(){
 	textPuntos.setString("Puntos: " + std::to_string(puntos));
 	textVidas.setString("Vidas: " + std::to_string(vidas));
+	textMensaje.setString("Game Over!!\n\nPresione space...");
 }
 
 
@@ -133,6 +161,12 @@ void Juego::dibujar() {
 	ventana->draw(enemyGolemIce);
 	ventana->draw(textPuntos);
 	ventana->draw(textVidas);
+
+
+
+	if (vidas == 0) {
+		ventana->draw(textMensaje);
+	}
 	if (timer == 0) {
 		ventana->draw(aumentoVelocidad);
 

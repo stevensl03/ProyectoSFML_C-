@@ -4,6 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include "config.h"
 #include "Collisionable.h"
+#include "ControllerManager.h"
 
 
 using namespace sf;
@@ -36,7 +37,7 @@ public:
 
 	Personaje();
 	void respawn();
-	void cmdComandos();
+	void cmdComandos(ControllerManager &controller);
 	
 	void update();
 	void draw(RenderTarget& target, RenderStates states)const override;
