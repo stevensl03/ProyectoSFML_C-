@@ -1,5 +1,9 @@
 ﻿  Enemy.cpp
+  Item.cpp
   Juego.cpp
+  Personaje.cpp
+C:\Users\david sanchez\Desktop\Proyecto\SFMLultime\SFMLultime\Personaje.cpp(47,19): warning C4305: '+=': truncamiento de 'double' a 'float'
+  Power.cpp
   main.cpp
   Generando código...
   SFMLultime.vcxproj -> C:\Users\david sanchez\Desktop\Proyecto\SFMLultime\x64\Debug\SFMLultime.exe

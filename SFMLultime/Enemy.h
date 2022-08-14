@@ -13,8 +13,10 @@ class Enemy: public Drawable, public Collisionable {
 	Texture _texture;
 	int _timeRespawn;
 
-	SoundBuffer bufferRisa;
-	Sound sonidoRisa;
+	SoundBuffer _bufferRisa;
+	Sound _sonidoRisa;
+
+	Vector2f _newPosition;
 
 public:
 

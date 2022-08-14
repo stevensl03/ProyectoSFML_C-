@@ -11,6 +11,7 @@ Juego::Juego(int width, int height, std::string title) {
 	textPuntos.setFont(font);
 	textPuntos.setPosition(10, 0);
 	textPuntos.setFillColor(Color::Red);
+
 	textVidas.setFont(font);
 	textVidas.setPosition(10,textPuntos.getGlobalBounds().height+40);
 
@@ -27,6 +28,8 @@ Juego::Juego(int width, int height, std::string title) {
 	//imagen de fondo
 	fondo_text.loadFromFile("imagenes/fondo.jpg");
 	fondo.setTexture(fondo_text);
+	fondo.setScale((float)WIDTH / fondo.getTexture()->getSize().x,
+		(float)HEIGHT / fondo.getTexture()->getSize().y);
 
 	//inicializacion de atributos
 	running = true;
@@ -66,44 +69,40 @@ void Juego::procesarEventos()
 		}
 	}
 
-	if (timer > 0) {
-		timer--;
-	}
-
-	sonic.update();
-
-	if (sonic.isCollision(gaseosa)) {
-		sonidoGaseosa.play();
-		puntos++;
-		gaseosa.respawn();
-		
-		
-	}
-	if (timer == 0 && sonic.isCollision(aumentoVelocidad)) {
-		sonidoPower.play();
-		sonic.addVelocity(1);
-		timer = 60 * 5;
-		aumentoVelocidad.respawn();
-	}
-
-	if (sonic.isCollision(enemyGolemIce)) {
-		vidas--;
-
-		if (vidas > 0) {
-			sonic.hited();
-			enemyGolemIce.youDamage();
-		}
-		else {
-			ventana->close();
-		}
-
-	}
-
-	enemyGolemIce.update();
-	//update - actulizar los estados del juego
-
+	
 	//CMD -Joy
 
+	if (vidas > 0) {
+
+	//update - actulizar los estados del juego
+		enemyGolemIce.update();
+		if (timer > 0) {
+			timer--;
+		}
+
+		sonic.update();
+
+		if (sonic.isCollision(gaseosa)) {
+			sonidoGaseosa.play();
+			puntos++;
+			gaseosa.respawn();
+
+
+		}
+		if (timer == 0 && sonic.isCollision(aumentoVelocidad)) {
+			sonidoPower.play();
+			sonic.addVelocity(1);
+			timer = 60 * 5;
+			aumentoVelocidad.respawn();
+		}
+
+		if (sonic.isCollision(enemyGolemIce)) {
+			vidas--;
+			sonic.hited();
+			enemyGolemIce.youDamage();
+
+		}
+	} 
 
 }
 

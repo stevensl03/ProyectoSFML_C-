@@ -17,7 +17,7 @@ void Item::draw(RenderTarget& target, RenderStates states) const{
 }
 
 void Item::respawn(){
-	_sprite.setPosition(std::rand()%1100 + _sprite.getGlobalBounds().width, std::rand() % 700 + _sprite.getGlobalBounds().width);
+	_sprite.setPosition(std::rand() % (WIDTH-100) + _sprite.getGlobalBounds().width, std::rand() % (HEIGHT-100) + _sprite.getGlobalBounds().width);
 }
 
 FloatRect Item::getBounds() const
