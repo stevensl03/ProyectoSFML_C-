@@ -80,6 +80,7 @@ void Juego::procesarEventos()
 			timer--;
 		}
 
+		sonic.cmdComandos();
 		sonic.update();
 
 		if (sonic.isCollision(gaseosa)) {
@@ -102,7 +103,16 @@ void Juego::procesarEventos()
 			enemyGolemIce.youDamage();
 
 		}
-	} 
+	}
+	else {
+		if (Keyboard::isKeyPressed(Keyboard::Space)) {
+			vidas = 3;
+			puntos = 0;
+			sonic.setVelocity(4);
+			enemyGolemIce.respawn();
+			sonic.respawn();
+		}
+	}
 
 }
 

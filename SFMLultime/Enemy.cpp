@@ -16,11 +16,11 @@ Enemy::Enemy() {
 }
 
 void Enemy::update(){
-	_timeRespawn--;
-	if (_timeRespawn < 0) {
+	//_timeRespawn--;
+	/*if (_timeRespawn < 0) {
 		_timeRespawn = 60;
 		_newPosition = { std::rand() % (WIDTH - 150) + _sprite.getGlobalBounds().width, std::rand() % (HEIGHT - 150) + _sprite.getGlobalBounds().width };
-	}
+	}*/
 
 	if (_newPosition.x > _sprite.getPosition().x) {
 		_sprite.move(5,0);
@@ -36,6 +36,18 @@ void Enemy::update(){
 
 	if (_newPosition.y < _sprite.getPosition().y) {
 		_sprite.move(0, -5);
+	}
+
+	//correguir posicion 
+	if (std::abs(_newPosition.x - _sprite.getPosition().x) <= 5) {
+		_sprite.setPosition(_newPosition.x, _sprite.getPosition().y);
+		_newPosition = { std::rand() % (WIDTH - 150) + _sprite.getGlobalBounds().width, std::rand() % (HEIGHT - 150) + _sprite.getGlobalBounds().width };
+
+	}
+	if (std::abs(_newPosition.y - _sprite.getPosition().y) <= 5) {
+		_sprite.setPosition(_sprite.getPosition().x, _newPosition.y);
+		_newPosition = { std::rand() % (WIDTH - 150) + _sprite.getGlobalBounds().width, std::rand() % (HEIGHT - 150) + _sprite.getGlobalBounds().width };
+
 	}
 
 }
