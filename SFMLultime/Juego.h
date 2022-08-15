@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <ctime>
 #include "config.h"
+#include "Animacion.h"
 #include "ControllerManager.h"
 #include "Personaje.h"
 #include "Item.h"
@@ -14,6 +15,8 @@
 using namespace sf;
 
 class Juego {
+
+	Animacion animacion;
 
 	ControllerManager controller;
 
@@ -26,14 +29,16 @@ class Juego {
 	Texture fondo_text;
 	Sprite fondo;
 
+	Texture textMira;
+	Sprite sprMira;
+
 	SoundBuffer bufferGaseosa;
 	Sound sonidoGaseosa;
 
 	SoundBuffer bufferPower;
 	Sound sonidoPower;
 
-
-
+	Vector2i posicionMouse;
 
 	Personaje sonic;
 	Item gaseosa;
@@ -53,6 +58,7 @@ public:
 
 
 	void gameLoop();
+	void procesarMouse();
 	void procesarEventos();
 	void ProcesarTexto();
 	void dibujar();

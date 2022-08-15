@@ -5,21 +5,20 @@
 #include "config.h"
 #include "Collisionable.h"
 #include "ControllerManager.h"
-
+#include "MyEntity.h"
 
 using namespace sf;
 
 enum class PersonajeState {
 	Idle = 0,
+	MoveUp,
+	MoveDown,
 	Move
 };
 
-class Personaje: public Drawable, public Collisionable{
+class Personaje: public MyEntity{
 
-	Sprite _sprite;
-	Texture _texture;
 	Vector2f _velocity;
-
 	SoundBuffer _bufferDaño;
 	Sound _sonidoDaño;
 

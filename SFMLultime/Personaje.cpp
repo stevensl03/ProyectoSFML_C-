@@ -14,10 +14,10 @@ Personaje::Personaje(){
     _frame = 0;
     _velocity = {4,4};
 
-    _texture.loadFromFile("imagenes/sonic2.png");
+    _texture.loadFromFile("imagenes/personaje5.png");
 
     _sprite.setTexture(_texture);
-    _sprite.setTextureRect({ 493,169,49,40 });
+    _sprite.setTextureRect({ 49,0,42,74 });
     _sprite.setOrigin(_sprite.getGlobalBounds().width / 2, _sprite.getGlobalBounds().height);
 
 
@@ -40,12 +40,12 @@ void Personaje::cmdComandos(ControllerManager &controller){
     //Keyboard::isKeyPressed(Keyboard::Up
     if (controller.isPress(ControllerManager::Buttons::Up)) {
         _movePosition.y = -_velocity.y;
-        _state = PersonajeState::Move;
+        _state = PersonajeState::MoveUp;
     }
 
     if (controller.isPress(ControllerManager::Buttons::Down)) {
         _movePosition.y = _velocity.y;
-        _state = PersonajeState::Move;
+        _state = PersonajeState::MoveDown;
     }
 
     if (controller.isPress(ControllerManager::Buttons::Left)) {
@@ -67,20 +67,28 @@ void Personaje::update(){
     switch (_state)
     {
     case PersonajeState::Idle:
-        _sprite.setTextureRect({10,39,50,40});
+        _sprite.setTextureRect({ 49,0,42,74 });
 
         break;
-    case PersonajeState::Move:
-        _frame += 0.2;
+    case PersonajeState::MoveUp:
+        _sprite.setTextureRect({ 96,0,42,74 });
+        _sprite.move(_movePosition);
+        break;
 
-        if (_frame >= 4) {
-            _frame = 0;
-        }
-
-        _sprite.setTextureRect({ 493 + int(_frame) * 50,169,51,40 });
+    case PersonajeState::MoveDown:
+        _sprite.setTextureRect({ 7,160,38,72 });
         _sprite.move(_movePosition);
 
-        if (_movePosition.x < 0) {
+        break;
+
+  
+
+    case PersonajeState::Move:
+   
+        _sprite.setTextureRect({ 4,78,41,78 });
+        _sprite.move(_movePosition);
+
+       if (_movePosition.x < 0) {
             _sprite.setScale(-1, 1);
 
         }

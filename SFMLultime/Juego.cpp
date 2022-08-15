@@ -3,6 +3,7 @@
 
 Juego::Juego(int width, int height, std::string title) {
 
+	
 	ventana = new RenderWindow(VideoMode(width, height), title);
 	eventos = new Event;
 
@@ -36,10 +37,17 @@ Juego::Juego(int width, int height, std::string title) {
 
 
 	//imagen de fondo
-	fondo_text.loadFromFile("imagenes/fondo.jpg");
+	fondo_text.loadFromFile("imagenes/Fondo.png");
 	fondo.setTexture(fondo_text);
 	fondo.setScale((float)WIDTH / fondo.getTexture()->getSize().x,
 		(float)HEIGHT / fondo.getTexture()->getSize().y);
+
+	//mira de disparo
+	textMira.loadFromFile("imagenes/mira.png");
+	sprMira.setTexture(textMira);
+	sprMira.setColor(Color::Red);
+	ventana->setMouseCursorVisible(false);
+
 
 	//inicializacion de atributos
 	running = true;
@@ -71,29 +79,39 @@ void Juego::gameLoop()
 	}
 }
 
+void Juego::procesarMouse()
+{
+	posicionMouse = Mouse::getPosition(*ventana);
+	posicionMouse = (Vector2i)ventana->mapPixelToCoords(posicionMouse);
+	
+}
+
 void Juego::procesarEventos()
 {
 	while (ventana->pollEvent(*eventos)) {
 		if (eventos->type == Event::Closed) {
 			ventana->close();
 		}
+		if (Event::MouseMoved) {
+			sprMira.setPosition((Vector2f)Mouse::getPosition(*ventana));
+		}
 	}
 //controllerManager
 	controller.reset();
 
-	if (Keyboard::isKeyPressed(Keyboard::Up)) {
+	if (Keyboard::isKeyPressed(Keyboard::W)) {
 		controller.setPress(ControllerManager::Buttons::Up);
 	}
 
-	if (Keyboard::isKeyPressed(Keyboard::Down)) {
+	if (Keyboard::isKeyPressed(Keyboard::S)) {
 		controller.setPress(ControllerManager::Buttons::Down);
 	}
 
-	if (Keyboard::isKeyPressed(Keyboard::Left)) {
+	if (Keyboard::isKeyPressed(Keyboard::A)) {
 		controller.setPress(ControllerManager::Buttons::Left);
 	}
 
-	if (Keyboard::isKeyPressed(Keyboard::Right)) {
+	if (Keyboard::isKeyPressed(Keyboard::D)) {
 		controller.setPress(ControllerManager::Buttons::Right);
 	}
 	
@@ -109,7 +127,6 @@ void Juego::procesarEventos()
 
 		sonic.cmdComandos(controller);
 		sonic.update();
-
 		if (sonic.isCollision(gaseosa)) {
 			sonidoGaseosa.play();
 			puntos++;
@@ -140,6 +157,12 @@ void Juego::procesarEventos()
 			sonic.respawn();
 		}
 	}
+	if (sprMira.getPosition().x != Mouse::getPosition().x) {
+		sprMira.setPosition(Mouse::getPosition().x, sprMira.getPosition().y);
+	}
+	if (sprMira.getPosition().y != Mouse::getPosition().y) {
+		sprMira.setPosition(sprMira.getPosition().x,Mouse::getPosition().y);
+	}
 
 }
 
@@ -157,6 +180,7 @@ void Juego::dibujar() {
 	//draw
 	ventana->draw(fondo);
 	ventana->draw(sonic);
+	ventana->draw(sprMira);
 	ventana->draw(gaseosa);
 	ventana->draw(enemyGolemIce);
 	ventana->draw(textPuntos);

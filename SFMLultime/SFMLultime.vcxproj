@@ -132,24 +132,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Animacion.cpp" />
     <ClCompile Include="Collisionable.cpp" />
     <ClCompile Include="ControllerManager.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="Juego.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyEntity.cpp" />
     <ClCompile Include="Personaje.cpp" />
     <ClCompile Include="Power.cpp" />
+    <ClCompile Include="Proyectil.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animacion.h" />
     <ClInclude Include="Collisionable.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="ControllerManager.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="Juego.h" />
+    <ClInclude Include="MyEntity.h" />
     <ClInclude Include="Personaje.h" />
     <ClInclude Include="Power.h" />
+    <ClInclude Include="Proyectil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
