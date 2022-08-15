@@ -136,7 +136,9 @@
     <ClCompile Include="Collisionable.cpp" />
     <ClCompile Include="ControllerManager.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Enemy2.cpp" />
     <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Item_2.cpp" />
     <ClCompile Include="Juego.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MyEntity.cpp" />
@@ -150,7 +152,9 @@
     <ClInclude Include="config.h" />
     <ClInclude Include="ControllerManager.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Enemy2.h" />
     <ClInclude Include="Item.h" />
+    <ClInclude Include="Item_2.h" />
     <ClInclude Include="Juego.h" />
     <ClInclude Include="MyEntity.h" />
     <ClInclude Include="Personaje.h" />

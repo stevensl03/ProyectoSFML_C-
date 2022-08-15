@@ -4,13 +4,16 @@
 #include <SFML/Audio.hpp>
 #include <stdlib.h>
 #include <ctime>
+#include "Proyectil.h"
 #include "config.h"
 #include "Animacion.h"
 #include "ControllerManager.h"
 #include "Personaje.h"
 #include "Item.h"
+#include "Item_2.h"
 #include "Power.h"
 #include "Enemy.h"
+#include "Enemy2.h"
 
 using namespace sf;
 
@@ -35,15 +38,26 @@ class Juego {
 	SoundBuffer bufferGaseosa;
 	Sound sonidoGaseosa;
 
+	SoundBuffer bufferVida;
+	Sound sonidoVida;
+
 	SoundBuffer bufferPower;
 	Sound sonidoPower;
 
+	SoundBuffer bufferGameOver;
+	Sound sonidoGameOver;
+
 	Vector2i posicionMouse;
+	Vector2i posicionMouse1;
+
 
 	Personaje sonic;
 	Item gaseosa;
+	Item2 CristalVida;
 	Power aumentoVelocidad;
 	Enemy enemyGolemIce;
+	Enemy2 Ghost;
+
 
 
 	bool running;
@@ -51,6 +65,9 @@ class Juego {
 	int puntos;
 	int vidas;
 	int timer;
+	int timerProyectil;
+	int timerVida;
+
 
 public:
 

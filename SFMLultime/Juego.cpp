@@ -33,6 +33,11 @@ Juego::Juego(int width, int height, std::string title) {
 	bufferPower.loadFromFile("sonidos/power.wav");
 	sonidoPower.setBuffer(bufferPower);
 
+	bufferVida.loadFromFile("sonidos/appVida.wav");
+	sonidoVida.setBuffer(bufferVida);
+
+	bufferGameOver.loadFromFile("sonidos/gameOver.wav");
+	sonidoGameOver.setBuffer(bufferGameOver);
 
 
 
@@ -55,19 +60,29 @@ Juego::Juego(int width, int height, std::string title) {
 	puntos = 0;
 	vidas = 3;
 	timer = 60 * 5;
+	timerProyectil = 60 * 2;
+	timerVida = 60 * 10;
+
 
 	//fps
 	ventana->setFramerateLimit(60);
 
 	//respaws
 	gaseosa.respawn();
+	CristalVida.respawn();
 	aumentoVelocidad.respawn();
 	enemyGolemIce.respawn();
+	Ghost.respawn();
+
+	
 
 	//Bucle del juego
 	gameLoop();
 
 }
+
+
+
 
 void Juego::gameLoop()
 {
@@ -88,6 +103,9 @@ void Juego::procesarMouse()
 
 void Juego::procesarEventos()
 {
+	if (timerProyectil > 0) {
+		timerProyectil--;
+	}
 	while (ventana->pollEvent(*eventos)) {
 		if (eventos->type == Event::Closed) {
 			ventana->close();
@@ -95,6 +113,23 @@ void Juego::procesarEventos()
 		if (Event::MouseMoved) {
 			sprMira.setPosition((Vector2f)Mouse::getPosition(*ventana));
 		}
+		//sonic.proyectil->update(posicionMouse1);
+	
+		if (Mouse::isButtonPressed(Mouse::Left)) {
+			if ( timerProyectil == 0) {
+				sonic.proyectil->respawn(sonic._sprite);
+				timerProyectil = 60 * 2;
+				//posicionMouse1 = (Vector2i)ventana->mapPixelToCoords(posicionMouse);
+			}
+
+		}
+		//////
+
+
+
+
+
+
 	}
 //controllerManager
 	controller.reset();
@@ -120,19 +155,26 @@ void Juego::procesarEventos()
 	if (vidas > 0) {
 
 	//update - actulizar los estados del juego
+	
+
+		Ghost.update();
 		enemyGolemIce.update();
-		if (timer > 0) {
-			timer--;
-		}
+
+
+
 
 		sonic.cmdComandos(controller);
 		sonic.update();
+
 		if (sonic.isCollision(gaseosa)) {
 			sonidoGaseosa.play();
 			puntos++;
 			gaseosa.respawn();
+		}
 
 
+		if (timer > 0) {
+			timer--;
 		}
 		if (timer == 0 && sonic.isCollision(aumentoVelocidad)) {
 			sonidoPower.play();
@@ -141,14 +183,46 @@ void Juego::procesarEventos()
 			aumentoVelocidad.respawn();
 		}
 
+		if (timerVida > 0) {
+			timerVida--;
+		}
+		if (timerVida == 0 && sonic.isCollision(CristalVida)) {
+			sonidoVida.play();
+			vidas++;
+			timerVida = 60 * 5;
+			CristalVida.respawn();
+		}
+		//colision con enemigos
 		if (sonic.isCollision(enemyGolemIce)) {
-			vidas--;
+			vidas = vidas - 2;
 			sonic.hited();
 			enemyGolemIce.youDamage();
+		}
+		if (sonic.isCollision(Ghost)) {
+			vidas--;
+			sonic.hited();
+			Ghost.youDamage();
+		}
 
+		//damage proyectil
+		if (sonic.proyectil->isCollision(Ghost)) {
+			Ghost.respawn();
+			sonic.proyectil->_sonidoElect.play();
+		}
+		if (sonic.proyectil->isCollision(enemyGolemIce)) {
+			enemyGolemIce.respawn();
+			sonic.proyectil->_sonidoElect.play();
+		}
+		if (vidas <= 0) {
+			sonidoGameOver.play();
 		}
 	}
+
+
+
 	else {
+	
+
 		if (Keyboard::isKeyPressed(Keyboard::Space)) {
 			vidas = 3;
 			puntos = 0;
@@ -179,22 +253,31 @@ void Juego::dibujar() {
 
 	//draw
 	ventana->draw(fondo);
-	ventana->draw(sonic);
 	ventana->draw(sprMira);
+	ventana->draw(sonic.proyectil->_sprite);
+	ventana->draw(sonic);
 	ventana->draw(gaseosa);
 	ventana->draw(enemyGolemIce);
-	ventana->draw(textPuntos);
-	ventana->draw(textVidas);
+	ventana->draw(Ghost);
 
 
 
-	if (vidas == 0) {
+
+	if (vidas <= 0) {
 		ventana->draw(textMensaje);
 	}
+
 	if (timer == 0) {
 		ventana->draw(aumentoVelocidad);
+	}
+
+	if (timerVida == 0) {
+		ventana->draw(CristalVida);
 
 	}
+
+	ventana->draw(textPuntos);
+	ventana->draw(textVidas);
 
 	ventana->display();
 }

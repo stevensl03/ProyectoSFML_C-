@@ -23,6 +23,10 @@ Personaje::Personaje(){
 
     _bufferDaño.loadFromFile("sonidos/daño.wav");
     _sonidoDaño.setBuffer(_bufferDaño);
+
+    proyectil = new Proyectil;
+    proyectil->respawn(_sprite);
+
 }
 
 
@@ -121,6 +125,8 @@ void Personaje::update(){
     if (_sprite.getPosition().y > HEIGHT) {
         _sprite.setPosition(_sprite.getPosition().x, HEIGHT);
     }
+
+    
 }
 
 void Personaje::draw(RenderTarget& target, RenderStates states)const{

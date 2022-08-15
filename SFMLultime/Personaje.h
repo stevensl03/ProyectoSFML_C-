@@ -6,6 +6,7 @@
 #include "Collisionable.h"
 #include "ControllerManager.h"
 #include "MyEntity.h"
+#include "Proyectil.h"
 
 using namespace sf;
 
@@ -22,13 +23,14 @@ class Personaje: public MyEntity{
 	SoundBuffer _bufferDaño;
 	Sound _sonidoDaño;
 
+	
+
 	Vector2f _movePosition = { 0, 0 };
-
-
 	float _frame;
 	PersonajeState _state = PersonajeState::Idle;
 
 public:
+	Proyectil* proyectil;
 
 
 	void addVelocity(float velocity);
