@@ -1,4 +1,5 @@
 #include "Juego.h"
+#include <iostream>
 
 
 Juego::Juego(int width, int height, std::string title) {
@@ -6,6 +7,7 @@ Juego::Juego(int width, int height, std::string title) {
 	
 	ventana = new RenderWindow(VideoMode(width, height), title);
 	eventos = new Event;
+	menu = new Menu(ventana->getSize().x, ventana->getSize().y);
 
 	//Fuente
 	font.loadFromFile("fuente1.ttf");
@@ -73,6 +75,7 @@ Juego::Juego(int width, int height, std::string title) {
 	timer = 60 * 5;
 	timerProyectil = 60 * 2;
 	timerVida = 60 * 10;
+	selectMenu = 0;
 
 
 	//fps
@@ -98,7 +101,6 @@ Juego::Juego(int width, int height, std::string title) {
 void Juego::gameLoop()
 {
 	while (running) {
-
 		procesarEventos();
 		ProcesarTexto();
 		dibujar();
@@ -118,6 +120,47 @@ void Juego::procesarEventos()
 		timerProyectil--;
 	}
 	while (ventana->pollEvent(*eventos)) {
+
+		//menu
+		switch (eventos->type) {
+
+		case Event::KeyReleased:
+			switch (eventos->key.code) {
+			case Keyboard::Up:
+				menu->moveUp();
+				break;
+
+			case Keyboard::Down:
+				menu->moveDown();
+				break;
+
+
+			case Keyboard::Return:
+				switch (menu->getPressedItem()) {
+				case 0:
+					std::cout << "Play" << std::endl;
+					selectMenu = 1;
+					break;
+
+				case 1:
+					std::cout << "Option" << std::endl;
+					break;
+
+				case 2:
+					ventana->close();
+					break;
+
+
+				}
+			}
+
+		default:
+			break;
+		}
+
+
+
+		//cerrar ventana
 		if (eventos->type == Event::Closed) {
 			ventana->close();
 		}
@@ -148,10 +191,15 @@ void Juego::procesarEventos()
 
 		}
 
+		if (eventos->type == sf::Event::KeyPressed && eventos->key.code == sf::Keyboard::Escape) {
+			selectMenu = 0;
+		}
+
 
 
 
 	}
+
 //controllerManager
 	controller.reset();
 
@@ -173,7 +221,7 @@ void Juego::procesarEventos()
 	
 	//CMD -Joy
 
-	if (vidas > 0) {
+	if (vidas > 0 && selectMenu == 1) {
 
 	//update - actulizar los estados del juego
 	
@@ -279,34 +327,40 @@ void Juego::dibujar() {
 	ventana->clear();
 
 	//draw
-	ventana->draw(fondo);
-	//ventana->setView(vistaPanatalla);
-	ventana->draw(sprMira);
-	ventana->draw(sonic.proyectil->_sprite);
-	ventana->draw(sonic);
-	ventana->draw(gaseosa);
-	ventana->draw(enemyGolemIce);
-	ventana->draw(Ghost);
+	if (selectMenu == 0) {
+		menu->draw(*ventana);
+	}
+	else if (selectMenu == 1) {
+		ventana->draw(fondo);
+		//ventana->setView(vistaPanatalla);
+		ventana->draw(sprMira);
+		ventana->draw(sonic.proyectil->_sprite);
+		ventana->draw(sonic);
+		ventana->draw(gaseosa);
+		ventana->draw(enemyGolemIce);
+		ventana->draw(Ghost);
 
 
 
 
-	if (vidas <= 0) {
-		ventana->draw(textMensaje);
-		sonic.proyectil->respawn(sonic._sprite);
+		if (vidas <= 0) {
+			ventana->draw(textMensaje);
+			sonic.proyectil->respawn(sonic._sprite);
+		}
+
+		if (timer == 0) {
+			ventana->draw(aumentoVelocidad);
+		}
+
+		if (timerVida == 0) {
+			ventana->draw(CristalVida);
+
+		}
+
+		ventana->draw(textPuntos);
+		ventana->draw(textVidas);
 	}
 
-	if (timer == 0) {
-		ventana->draw(aumentoVelocidad);
-	}
-
-	if (timerVida == 0) {
-		ventana->draw(CristalVida);
-
-	}
-
-	ventana->draw(textPuntos);
-	ventana->draw(textVidas);
 
 	ventana->display();
 }

@@ -6,6 +6,7 @@
 #include <ctime>
 #include "Proyectil.h"
 #include "config.h"
+#include "Menu.h"
 #include "Animacion.h"
 #include "ControllerManager.h"
 #include "Personaje.h"
@@ -24,6 +25,7 @@ class Juego {
 	ControllerManager controller;
 
 	RenderWindow* ventana;
+	Menu *menu;
 	Event* eventos;
 	//View vistaPanatalla;
 
@@ -61,7 +63,7 @@ class Juego {
 	Enemy enemyGolemIce;
 	Enemy2 Ghost;
 
-
+	int selectMenu;
 	int pauseMusic;
 	bool running;
 	float fps;

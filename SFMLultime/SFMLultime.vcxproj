@@ -141,6 +141,7 @@
     <ClCompile Include="Item_2.cpp" />
     <ClCompile Include="Juego.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="MyEntity.cpp" />
     <ClCompile Include="Personaje.cpp" />
     <ClCompile Include="Power.cpp" />
@@ -156,6 +157,7 @@
     <ClInclude Include="Item.h" />
     <ClInclude Include="Item_2.h" />
     <ClInclude Include="Juego.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="MyEntity.h" />
     <ClInclude Include="Personaje.h" />
     <ClInclude Include="Power.h" />

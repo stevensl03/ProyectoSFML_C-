@@ -39,7 +39,7 @@
   <Class Name="Juego">
     <Position X="20" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CAYMIAEAKBEAAQkQQBKAAIEAABiEAAAAAhgM0kEAMCA=</HashCode>
+      <HashCode>CAYMIAEAKBEAAQkQQBKAAIkAABiEAAAAAhhM0kEAMGA=</HashCode>
       <FileName>Juego.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -60,7 +60,7 @@
   <Class Name="Personaje">
     <Position X="11.75" Y="11.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACAAiAAAEgIABAAAAAIACAIAAAAAAAQAAAABgAEEAAA=</HashCode>
+      <HashCode>ACAAiAAAEgIABAAAAAIACAIAAAAAAAQAAABBgAEEAAA=</HashCode>
       <FileName>Personaje.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -90,6 +90,13 @@
     <TypeIdentifier>
       <HashCode>AAABCAAAAAAAAAAAAAIAAAAAAAAAAAQAAAAAAAAEAAA=</HashCode>
       <FileName>Item_2.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menu" Collapsed="true">
+    <Position X="30.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIBBAAAAAAAAAAIAAAgAAAAIAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Menu.h</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="PersonajeState">
