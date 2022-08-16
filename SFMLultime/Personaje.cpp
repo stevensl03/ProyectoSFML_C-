@@ -9,6 +9,11 @@ void Personaje::setVelocity(float velocity){
     _velocity = { velocity,velocity };
 }
 
+Vector2f Personaje::getVelocity()
+{
+    return _velocity;
+}
+
 Personaje::Personaje(){
   
     _frame = 0;

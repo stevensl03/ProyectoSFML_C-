@@ -25,6 +25,7 @@ class Juego {
 
 	RenderWindow* ventana;
 	Event* eventos;
+	//View vistaPanatalla;
 
 	Font font;
 	Text textPuntos, textVidas, textMensaje;

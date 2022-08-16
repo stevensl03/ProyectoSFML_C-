@@ -35,6 +35,9 @@ public:
 
 	void addVelocity(float velocity);
 	void setVelocity(float velocity);
+	Vector2f getVelocity();
+
+	
 
 	Personaje();
 	void respawn();

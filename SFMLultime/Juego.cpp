@@ -50,7 +50,12 @@ Juego::Juego(int width, int height, std::string title) {
 	fondo_text.loadFromFile("imagenes/Fondo.png");
 	fondo.setTexture(fondo_text);
 	fondo.setScale((float)WIDTH / fondo.getTexture()->getSize().x,
-		(float)HEIGHT / fondo.getTexture()->getSize().y);
+	(float)HEIGHT / fondo.getTexture()->getSize().y);
+	//vista
+	//vistaPanatalla.reset(FloatRect(100,100,200,100));
+	//vistaPanatalla.setSize(800, 600);
+	//vistaPanatalla.zoom(0.5f);
+
 
 	//mira de disparo
 	textMira.loadFromFile("imagenes/mira.png");
@@ -194,10 +199,16 @@ void Juego::procesarEventos()
 		}
 		if (timer == 0 && sonic.isCollision(aumentoVelocidad)) {
 			sonidoPower.play();
-			sonic.addVelocity(1);
+			if (float(sonic.getVelocity().x) < 16.f){
+				sonic.addVelocity(2);
+			}
+			else {
+				puntos = puntos + 2;
+			}
 			timer = 60 * 5;
 			aumentoVelocidad.respawn();
 		}
+
 
 		if (timerVida > 0) {
 			timerVida--;
@@ -269,6 +280,7 @@ void Juego::dibujar() {
 
 	//draw
 	ventana->draw(fondo);
+	//ventana->setView(vistaPanatalla);
 	ventana->draw(sprMira);
 	ventana->draw(sonic.proyectil->_sprite);
 	ventana->draw(sonic);
