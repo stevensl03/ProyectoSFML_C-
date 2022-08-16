@@ -10,6 +10,7 @@ Proyectil::Proyectil()
 
 	_bufferElect.loadFromFile("sonidos/electri.wav");
 	_sonidoElect.setBuffer(_bufferElect);
+	_sonidoElect.setVolume(30.f);
 }
 
 void Proyectil::update(sf::Vector2i posicionMouse)

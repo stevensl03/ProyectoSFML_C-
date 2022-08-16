@@ -39,6 +39,11 @@ Juego::Juego(int width, int height, std::string title) {
 	bufferGameOver.loadFromFile("sonidos/gameOver.wav");
 	sonidoGameOver.setBuffer(bufferGameOver);
 
+	musicaFondo.openFromFile("sonidos/musicaFondo.wav");
+	musicaFondo.setVolume(50.f);
+	musicaFondo.setLoop(true);
+	musicaFondo.play();
+
 
 
 	//imagen de fondo
@@ -55,6 +60,7 @@ Juego::Juego(int width, int height, std::string title) {
 
 
 	//inicializacion de atributos
+	pauseMusic = 0;
 	running = true;
 	fps = 60;
 	puntos = 0;
@@ -124,8 +130,18 @@ void Juego::procesarEventos()
 
 		}
 		//////
+		if (eventos->type == sf::Event::KeyPressed && eventos->key.code == sf::Keyboard::O) {
 
+			if (pauseMusic == 0) {
+				musicaFondo.play();
+				pauseMusic++;
+			}
+			else {
+				musicaFondo.stop();
+				pauseMusic = 0;
+			}
 
+		}
 
 
 
@@ -189,7 +205,7 @@ void Juego::procesarEventos()
 		if (timerVida == 0 && sonic.isCollision(CristalVida)) {
 			sonidoVida.play();
 			vidas++;
-			timerVida = 60 * 5;
+			timerVida = 60 * 10;
 			CristalVida.respawn();
 		}
 		//colision con enemigos
@@ -265,6 +281,7 @@ void Juego::dibujar() {
 
 	if (vidas <= 0) {
 		ventana->draw(textMensaje);
+		sonic.proyectil->respawn(sonic._sprite);
 	}
 
 	if (timer == 0) {

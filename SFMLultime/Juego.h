@@ -47,6 +47,8 @@ class Juego {
 	SoundBuffer bufferGameOver;
 	Sound sonidoGameOver;
 
+	Music musicaFondo;
+
 	Vector2i posicionMouse;
 	Vector2i posicionMouse1;
 
@@ -59,7 +61,7 @@ class Juego {
 	Enemy2 Ghost;
 
 
-
+	int pauseMusic;
 	bool running;
 	float fps;
 	int puntos;
