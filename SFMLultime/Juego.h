@@ -7,6 +7,7 @@
 #include "Proyectil.h"
 #include "config.h"
 #include "Menu.h"
+#include "Historia.h"
 #include "Animacion.h"
 #include "ControllerManager.h"
 #include "Personaje.h"
@@ -21,6 +22,7 @@ using namespace sf;
 class Juego {
 
 	Animacion animacion;
+	Historia historia;
 
 	ControllerManager controller;
 

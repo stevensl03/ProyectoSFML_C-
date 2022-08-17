@@ -39,7 +39,7 @@
   <Class Name="Juego">
     <Position X="20" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CAYMIAEAKBEAAQkQQBKAAIkAABiEAAAAAhhM0kEAMGA=</HashCode>
+      <HashCode>CAYMIAEAKBEAAQkQQBKAAIkAABiEAAAAAhhM0kECMGA=</HashCode>
       <FileName>Juego.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -92,7 +92,7 @@
       <FileName>Item_2.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Menu" Collapsed="true">
+  <Class Name="Menu">
     <Position X="30.25" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAIBBAAAAAAAAAAIAAAgAAAAIAAAAAAAAAEAAAAA=</HashCode>

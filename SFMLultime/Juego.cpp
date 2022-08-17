@@ -143,10 +143,15 @@ void Juego::procesarEventos()
 					break;
 
 				case 1:
-					std::cout << "Option" << std::endl;
+					
+					historia.printHistoria();
 					break;
 
 				case 2:
+					std::cout << "Option" << std::endl;
+					break;
+
+				case 3:
 					ventana->close();
 					break;
 

@@ -1,23 +1,2 @@
-﻿  Juego.cpp
-C:\Users\david sanchez\Desktop\Proyecto\SFMLultime\SFMLultime\Juego.cpp(10,58): warning C4244: 'argumento': conversión de 'T' a 'float'; posible pérdida de datos
-          with
-          [
-              T=unsigned int
-          ]
-C:\Users\david sanchez\Desktop\Proyecto\SFMLultime\SFMLultime\Juego.cpp(10,36): warning C4244: 'argumento': conversión de 'T' a 'float'; posible pérdida de datos
-          with
-          [
-              T=unsigned int
-          ]
-C:\Users\david sanchez\Desktop\Proyecto\SFMLultime\SFMLultime\Juego.cpp(24,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\david sanchez\Desktop\Proyecto\SFMLultime\SFMLultime\Juego.cpp(310,43): warning C4244: 'argumento': conversión de 'T' a 'float'; posible pérdida de datos
-          with
-          [
-              T=int
-          ]
-C:\Users\david sanchez\Desktop\Proyecto\SFMLultime\SFMLultime\Juego.cpp(313,67): warning C4244: 'argumento': conversión de 'T' a 'float'; posible pérdida de datos
-          with
-          [
-              T=int
-          ]
+﻿  Historia.cpp
   SFMLultime.vcxproj -> C:\Users\david sanchez\Desktop\Proyecto\SFMLultime\x64\Debug\SFMLultime.exe
