@@ -13,104 +13,275 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Archivos de encabezado\Historia">
-      <UniqueIdentifier>{756f66d6-0a20-48c3-a858-f97da59ffe29}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Archivos de origen\Historia">
       <UniqueIdentifier>{d5558cad-6bdc-4c59-b35c-765d221feb6c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de origen\Juego">
+      <UniqueIdentifier>{2767916f-0bbc-46bf-afd2-83ec3265aa8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Juego\Juego">
+      <UniqueIdentifier>{4b1a8377-cf1e-487e-89ce-544cfec91e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Juego">
+      <UniqueIdentifier>{c177c6c4-195a-4777-8286-f42f786136d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Historia">
+      <UniqueIdentifier>{756f66d6-0a20-48c3-a858-f97da59ffe29}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="Personaje.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="Juego.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="Item.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="Collisionable.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="Power.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="ControllerManager.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="Animacion.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="Aguila.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
     </ClCompile>
     <ClCompile Include="Proyectil.cpp">
-      <Filter>Archivos de origen</Filter>
+      <Filter>Archivos de origen\Juego</Filter>
+    </ClCompile>
+    <ClCompile Include="Power.cpp">
+      <Filter>Archivos de origen\Juego</Filter>
+    </ClCompile>
+    <ClCompile Include="Personaje.cpp">
+      <Filter>Archivos de origen\Juego</Filter>
     </ClCompile>
     <ClCompile Include="MyEntity.cpp">
-      <Filter>Archivos de origen</Filter>
+      <Filter>Archivos de origen\Juego</Filter>
     </ClCompile>
-    <ClCompile Include="Item_2.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy2.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="main.cpp">
+      <Filter>Archivos de origen\Juego</Filter>
     </ClCompile>
     <ClCompile Include="Menu.cpp">
-      <Filter>Archivos de origen</Filter>
+      <Filter>Archivos de origen\Juego</Filter>
+    </ClCompile>
+    <ClCompile Include="Juego.cpp">
+      <Filter>Archivos de origen\Juego</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_2.cpp">
+      <Filter>Archivos de origen\Juego</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Archivos de origen\Juego</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy2.cpp">
+      <Filter>Archivos de origen\Juego</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Archivos de origen\Juego</Filter>
+    </ClCompile>
+    <ClCompile Include="Collisionable.cpp">
+      <Filter>Archivos de origen\Juego</Filter>
+    </ClCompile>
+    <ClCompile Include="Animacion.cpp">
+      <Filter>Archivos de origen\Juego</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerManager.cpp">
+      <Filter>Archivos de origen\Juego</Filter>
     </ClCompile>
     <ClCompile Include="Historia.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="Oso.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="Leon.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfazTerrestres.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfazOviparos.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfazMamiferos.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfazHervivoros.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfazCarnivoros.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfazAnimal.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfazAereos.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfazAcuaticos.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="Guacamaya.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="Garza.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="Cebra.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="Animal.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="Pinguino.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="Hipopotamo.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="Cocodrilo.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\personas\Aseador.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\personas\Celador.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\personas\Cuidador.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\personas\Empleados.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\personas\Persona.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\personas\Vendedor.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\personas\Veterinario.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Downloads\personas\Visitante.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="HabitadTropical.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Personaje.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="config.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Juego.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Item.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Collisionable.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Power.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="ControllerManager.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Animacion.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="Aguila.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
     </ClInclude>
     <ClInclude Include="Proyectil.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>Archivos de encabezado\Juego</Filter>
+    </ClInclude>
+    <ClInclude Include="Power.h">
+      <Filter>Archivos de encabezado\Juego</Filter>
+    </ClInclude>
+    <ClInclude Include="Personaje.h">
+      <Filter>Archivos de encabezado\Juego</Filter>
     </ClInclude>
     <ClInclude Include="MyEntity.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Item_2.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy2.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>Archivos de encabezado\Juego</Filter>
     </ClInclude>
     <ClInclude Include="Menu.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>Archivos de encabezado\Juego</Filter>
+    </ClInclude>
+    <ClInclude Include="Juego.h">
+      <Filter>Archivos de encabezado\Juego</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_2.h">
+      <Filter>Archivos de encabezado\Juego</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Archivos de encabezado\Juego</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy2.h">
+      <Filter>Archivos de encabezado\Juego</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Archivos de encabezado\Juego</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerManager.h">
+      <Filter>Archivos de encabezado\Juego</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Archivos de encabezado\Juego</Filter>
+    </ClInclude>
+    <ClInclude Include="Collisionable.h">
+      <Filter>Archivos de encabezado\Juego</Filter>
+    </ClInclude>
+    <ClInclude Include="Animacion.h">
+      <Filter>Archivos de encabezado\Juego</Filter>
     </ClInclude>
     <ClInclude Include="Historia.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="Oso.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="Leon.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfazTerrestres.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfazOviparos.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfazMamiferos.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfazHervivoros.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfazCarnivoros.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfazAnimal.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfazAereos.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfazAcuaticos.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="Guacamaya.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="Garza.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="Cebra.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="Animal.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="Hipopotamo.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="Cocodrilo.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="Pinguino.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\personas\Aseador.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\personas\Celador.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\personas\Cuidador.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\personas\Empleados.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\personas\Persona.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\personas\Vendedor.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\personas\Veterinario.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Downloads\personas\Visitante.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="HabitadTropical.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

@@ -348,6 +348,7 @@ void Juego::dibujar() {
 
 
 
+
 		if (vidas <= 0) {
 			ventana->draw(textMensaje);
 			sonic.proyectil->respawn(sonic._sprite);
