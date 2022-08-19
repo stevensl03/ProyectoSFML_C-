@@ -26,6 +26,9 @@ public:
 	void respirar()override;
 	void nacer()override;
 	void crecer()override;
+
+	friend ostream& operator<<(ostream& out, Hipopotamo& animal);
+
 };
 
 #endif

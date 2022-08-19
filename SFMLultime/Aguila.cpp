@@ -70,3 +70,9 @@ void Aguila::desarrollar()
 {
 	cout << "El huvo de aguila se esta desarrolando" << endl;
 }
+
+ostream& operator<<(ostream& out, Aguila& animal)
+{
+	animal.print();
+	return out;
+}

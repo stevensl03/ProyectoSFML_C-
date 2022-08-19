@@ -54,3 +54,10 @@ void Cebra::defender()
 {
     cout << "La cebra se esta defendiendo. " << endl;
 }
+
+ostream& operator<<(ostream& out, Cebra& animal)
+{
+    animal.print();
+    return out;
+}
+

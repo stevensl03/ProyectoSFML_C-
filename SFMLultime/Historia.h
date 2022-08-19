@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include <vector>
 #include "menu.h"
 #include "Aguila.h"
 #include "Cebra.h"
@@ -11,6 +12,15 @@
 #include "Leon.h"
 #include "Oso.h"
 #include "Pinguino.h"
+
+#include "Veterinario.h"
+#include "Vendedor.h"
+#include "Cuidador.h"
+#include "Celador.h"
+#include "Aseador.h"
+
+#include "Visitante.h"
+
 #define MAX_NUMBER_OF_ITEM 4
 
 using namespace std;
@@ -31,7 +41,13 @@ class Historia {
 	Oso *oso;
 	Pinguino *pinguino;
 
+	Veterinario* veterinatio;
+	Vendedor* vendedor;
+	Cuidador* cuidador;
+	Celador* celador;
+	Aseador* aseador;
 
+	vector<Visitante* > visitantes;
 
 
 public:
@@ -41,18 +57,6 @@ public:
 	void printHistoria();
 	void printAnimales();
 	void printEmpleados();
-
-
-	Aguila getAguila();
-	Cebra getCebra();
-	Cocodrilo getCocodrilo();
-	Garza getGarza();
-	Guacamaya getGuacamaya();
-	Hipopotamo getHipopotamo();
-	Leon getLeon();
-	Oso getOso();
-	Pinguino getPinguino();
-
 
 
 

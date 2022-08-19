@@ -37,8 +37,8 @@ virtual void print();
 	float getTamaño();
 	void setTtamaño(float tamaño);
 
-	//friend ostream & operator<<(ostream & out, Animal * animal);
-	//friend istream& operator>>(istream& input, Animal& animal);
+	friend ostream & operator<<(ostream & out, Animal * animal);
+	friend istream& operator>>(istream& input, Animal& animal);
 
 
 };

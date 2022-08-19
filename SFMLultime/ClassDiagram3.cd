@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Collisionable" Collapsed="true">
+    <Position X="25.75" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Collisionable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControllerManager">
+    <Position X="28" Y="4.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="ControllerManager::Buttons" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ControllerManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAEAABAAAAAAAABAAAAAA=</HashCode>
+      <FileName>ControllerManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy">
+    <Position X="19" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACgABAAAAACAAEAIAAAAAAAAAAAQAAAAAAAgGAAA=</HashCode>
+      <FileName>Enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy2">
+    <Position X="21.25" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACgABAAAAACAAEAIAAAAAAAAAAAQAAAAAAAgGAAA=</HashCode>
+      <FileName>Enemy2.h</FileName>
+      <NewMemberFileName>Enemy.h</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Item">
+    <Position X="25.75" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAIAAAAEAAAAAAQAAAAAAAAEAAA=</HashCode>
+      <FileName>Item.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Item2">
+    <Position X="30.25" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCAAAAAAAAAAAAAIAAAAAAAAAAAQAAAAAAAAEAAA=</HashCode>
+      <FileName>Item_2.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Juego">
+    <Position X="37.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAYMIAEAKBEAAQkQQBKABIkAABiEAAAAAhhM0kECMGA=</HashCode>
+      <FileName>Juego.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menu">
+    <Position X="40.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIBBAAAAAAAAAAIAAAgAAAAIAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Menu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyEntity" Collapsed="true">
+    <Position X="25.75" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAYAABQAAAAAAAAIAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>MyEntity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Personaje">
+    <Position X="23.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAiAAAEgIABAAAAAIACAIAAAAAAAQAAABBgAEEAAA=</HashCode>
+      <FileName>Personaje.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Power">
+    <Position X="28" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAIAAAAAAAAAAAQBAAAAAAAEAAA=</HashCode>
+      <FileName>Power.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyectil">
+    <Position X="32.5" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAABAAAAAAAAAgIACAAAAEAAAAQAAAAgAAAEBAA=</HashCode>
+      <FileName>Proyectil.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aguila" HideInheritanceLine="true">
+    <Position X="5" Y="11.75" Width="1.5" />
+    <InheritanceLine Type="Animal" ManuallyRouted="true">
+      <Path>
+        <Point X="8.875" Y="5.44" />
+        <Point X="8.875" Y="7.915" />
+        <Point X="8.333" Y="7.915" Type="JumpStart" />
+        <Point X="8.167" Y="7.915" Type="JumpEnd" />
+        <Point X="5.75" Y="7.915" />
+        <Point X="5.75" Y="11.75" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="InterfazAnimal" IsHidden="true" />
+    <InheritanceLine Type="InterfazAereos" IsHidden="true" />
+    <InheritanceLine Type="InterfazCarnivoros" IsHidden="true" />
+    <InheritanceLine Type="InterfazOviparos" IsHidden="true" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAUAAIABAQAAgAACAAAAAoCAAAAIAwAA=</HashCode>
+      <FileName>Aguila.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Animal">
+    <Position X="8.25" Y="1" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>hAxAgEAEAAgABMAAAAABAAAAAAIAAAAAIAABABAAAAA=</HashCode>
+      <FileName>Animal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aseador">
+    <Position X="53.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEQAAAAAAAAAIAEAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Aseador.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cebra" HideInheritanceLine="true">
+    <Position X="11.5" Y="12" Width="1.5" />
+    <InheritanceLine Type="Animal" ManuallyRouted="true">
+      <Path>
+        <Point X="8.875" Y="5.44" />
+        <Point X="8.875" Y="7.866" />
+        <Point X="12.25" Y="7.866" />
+        <Point X="12.25" Y="12" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="InterfazAnimal" IsHidden="true" />
+    <InheritanceLine Type="InterfazTerrestres" IsHidden="true" />
+    <InheritanceLine Type="InterfazHervivoros" IsHidden="true" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQAAAQEAMCAAAAAAAASAAACAIAAAAAAAABA=</HashCode>
+      <FileName>Cebra.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Celador">
+    <Position X="55.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAACAACgAIAAAAAAQAAAAAACAA=</HashCode>
+      <FileName>Celador.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cocodrilo" HideInheritanceLine="true">
+    <Position X="18.5" Y="12.25" Width="1.5" />
+    <InheritanceLine Type="Animal" ManuallyRouted="true">
+      <Path>
+        <Point X="8.875" Y="5.44" />
+        <Point X="8.875" Y="7.814" />
+        <Point X="19.25" Y="7.814" />
+        <Point X="19.25" Y="12.25" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="InterfazAcuaticos" IsHidden="true" />
+    <InheritanceLine Type="InterfazOviparos" IsHidden="true" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAABAAAAAAAAAIQAAEAAEAAAEQAAAAAAAAQAA=</HashCode>
+      <FileName>Cocodrilo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cuidador">
+    <Position X="62.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQABAAAAAAAAAAAAAAAAAAAAAAAAAAQRAAAAAAAAAA=</HashCode>
+      <FileName>Cuidador.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Empleados">
+    <Position X="57.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAQAAA=</HashCode>
+      <FileName>Empleados.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Garza" HideInheritanceLine="true">
+    <Position X="0.5" Y="11.75" Width="1.5" />
+    <InheritanceLine Type="Animal" ManuallyRouted="true">
+      <Path>
+        <Point X="8.875" Y="5.44" />
+        <Point X="8.875" Y="7.87" />
+        <Point X="1.25" Y="7.87" />
+        <Point X="1.25" Y="11.75" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="InterfazAnimal" IsHidden="true" />
+    <InheritanceLine Type="InterfazAereos" IsHidden="true" />
+    <InheritanceLine Type="InterfazCarnivoros" IsHidden="true" />
+    <InheritanceLine Type="InterfazOviparos" IsHidden="true" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAAAUAQIAFAQAAAAACAAAAAIAAAAAAAwgA=</HashCode>
+      <FileName>Garza.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Guacamaya" HideInheritanceLine="true">
+    <Position X="2.75" Y="11.75" Width="1.5" />
+    <InheritanceLine Type="Animal" ManuallyRouted="true">
+      <Path>
+        <Point X="8.875" Y="5.44" />
+        <Point X="8.875" Y="7.836" />
+        <Point X="3.5" Y="7.836" />
+        <Point X="3.5" Y="11.75" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="InterfazAnimal" IsHidden="true" />
+    <InheritanceLine Type="InterfazAereos" IsHidden="true" />
+    <InheritanceLine Type="InterfazOviparos" IsHidden="true" />
+    <InheritanceLine Type="InterfazHervivoros" IsHidden="true" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAIAAAAgUAAICAAQAAAAASAAIAAIAAAAAAAQAA=</HashCode>
+      <FileName>Guacamaya.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HabitadTropical">
+    <Position X="26.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAgAAAAAAAAACCAAAAAAAAAAACAAAAAAAEAAAAAA=</HashCode>
+      <FileName>HabitadTropical.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hipopotamo" HideInheritanceLine="true">
+    <Position X="16.5" Y="12.25" Width="1.5" />
+    <InheritanceLine Type="Animal" ManuallyRouted="true">
+      <Path>
+        <Point X="8.875" Y="5.44" />
+        <Point X="8.875" Y="7.866" />
+        <Point X="17.25" Y="7.866" />
+        <Point X="17.25" Y="12.25" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="InterfazAcuaticos" IsHidden="true" />
+    <InheritanceLine Type="InterfazMamiferos" IsHidden="true" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAACAEAAAAAIACAAABEAgAAAAAAAAACAAAA=</HashCode>
+      <FileName>Hipopotamo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Historia">
+    <Position X="41" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAABQoAAAAAAACYAAAgECDQAQAACAAEIBAAAICA=</HashCode>
+      <FileName>Historia.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazAcuaticos">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InterfazAcuaticos.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazAereos">
+    <Position X="19.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InterfazAereos.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazAnimal">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAIAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>InterfazAnimal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazCarnivoros">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>InterfazCarnivoros.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazHervivoros">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InterfazHervivoros.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazMamiferos">
+    <Position X="24.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InterfazMamiferos.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazOviparos">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>InterfazOviparos.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazTerrestres">
+    <Position X="21" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAABA=</HashCode>
+      <FileName>InterfazTerrestres.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Leon" HideInheritanceLine="true">
+    <Position X="9.5" Y="11.75" Width="1.5" />
+    <InheritanceLine Type="Animal" ManuallyRouted="true">
+      <Path>
+        <Point X="8.875" Y="5.44" />
+        <Point X="8.875" Y="7.861" />
+        <Point X="10.25" Y="7.861" />
+        <Point X="10.25" Y="11.75" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="InterfazAnimal" IsHidden="true" />
+    <InheritanceLine Type="InterfazTerrestres" IsHidden="true" />
+    <InheritanceLine Type="InterfazCarnivoros" IsHidden="true" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAAAAAAQQAYABAAAAAAAAAAACAIAAAAgAAgBA=</HashCode>
+      <FileName>Leon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Oso" HideInheritanceLine="true">
+    <Position X="7.5" Y="11.75" Width="1.5" />
+    <InheritanceLine Type="Animal" ManuallyRouted="true">
+      <Path>
+        <Point X="8.875" Y="5.44" />
+        <Point X="8.875" Y="7.825" />
+        <Point X="8.25" Y="7.825" />
+        <Point X="8.25" Y="11.75" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="InterfazAnimal" IsHidden="true" />
+    <InheritanceLine Type="InterfazCarnivoros" IsHidden="true" />
+    <InheritanceLine Type="InterfazTerrestres" IsHidden="true" />
+    <TypeIdentifier>
+      <HashCode>AAQAEQABAAAAAQAAIABAAAAAAAAAAQCAIAAAAAAAgBA=</HashCode>
+      <FileName>Oso.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Persona">
+    <Position X="60" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAAAAAAQAAACAAAAAwAAIAAACAAACACIGAAAEgAA=</HashCode>
+      <FileName>Persona.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pinguino" HideInheritanceLine="true">
+    <Position X="14.25" Y="12" Width="1.5" />
+    <InheritanceLine Type="Animal" ManuallyRouted="true">
+      <Path>
+        <Point X="8.875" Y="5.44" />
+        <Point X="8.875" Y="7.751" />
+        <Point X="9.89" Y="7.751" />
+        <Point X="9.89" Y="7.894" />
+        <Point X="15" Y="7.894" />
+        <Point X="15" Y="12" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="InterfazAcuaticos" IsHidden="true" />
+    <InheritanceLine Type="InterfazOviparos" IsHidden="true" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAIQAAAAAVABAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Pinguino.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vendedor">
+    <Position X="57.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAACAAAgAgAABAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Vendedor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Veterinario">
+    <Position X="60" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAAAAAAEAAAAAAIAAAAAAAAAQAAAAAAAAEAAA=</HashCode>
+      <FileName>Veterinario.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Visitante">
+    <Position X="64.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAAAAAAAQAAAAABAAAAAAAAAAAAACAAAAABAA=</HashCode>
+      <FileName>Visitante.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Animacion" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animacion.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="PersonajeState">
+    <Position X="23.5" Y="23" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAABAAIAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Personaje.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -6,12 +6,19 @@
 #include<iostream>
 
 class Cuidador : public Empleados {
-
-
+	int aparatosReparados;
 public:
 	Cuidador();
-	Cuidador(string nombre, string apellido, string labor);
+	Cuidador(string nombre, string apellido, string genero, int edad, string labor, int aparatosReparados);
+
+	void print()override;
+
+	int getAparatosReparados();
+	void setAparatosReparados(int aparatosReparados);
+
 	void alimentar();
+
+	friend ostream& operator<<(ostream& out, Cuidador& persona);
 
 };
 #endif

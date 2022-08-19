@@ -26,6 +26,9 @@ public:
 	void respirar()override;
 	void reproducir()override;
 	void desarrollar()override;
+
+	friend ostream& operator<<(ostream& out, Cocodrilo& animal);
+
 };
 
 #endif

@@ -37,6 +37,7 @@ public:
 	void reproducir()override;
 	void desarrollar()override;
 
+	friend ostream& operator<<(ostream& out, Aguila& animal);
 
 
 

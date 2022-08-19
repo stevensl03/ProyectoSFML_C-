@@ -41,14 +41,11 @@ void Pinguino::desarrollar()
 	cout << "Me desarrollo a partir de un huevo" << endl;
 }
 
-/*
-ostream& operator<<(ostream& out, Pinguino* animal)
+
+
+ostream& operator<<(ostream& out, Pinguino& animal)
 {
-	out << "Tipo de animal: " << animal->getTipoAnimal() << endl;
-	out << "Peso: " << animal->getPeso() << endl;
-	out << "Habitad: " << animal->getHabitad() << endl;
-	out << "Raza: " << animal->getRaza() << endl;
-	out << "Tamaño: " << animal->getTamaño() << endl;
-	out << "Color del pecho " << animal->getColorPecho() << endl;
+	animal.print();
 	return out;
-}*/
+}
+

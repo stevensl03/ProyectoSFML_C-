@@ -32,6 +32,7 @@ public:
 	void pastar()override;
 	void defender()override;
 
+	friend ostream& operator<<(ostream& out, Cebra& animal);
 
 
 };

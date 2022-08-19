@@ -39,14 +39,11 @@ void Hipopotamo::crecer()
 	cout << "Me desarrollo dentro del vientre de mi madre, luego crezco sano y fuerte" << endl;
 }
 
-/*
-ostream& operator<<(ostream& out, Hipopotamo* animal)
+
+
+ostream& operator<<(ostream& out, Hipopotamo& animal)
 {
-	out << "Tipo de animal: " << animal->getTipoAnimal() << endl;
-	out << "Peso: " << animal->getPeso() << endl;
-	out << "Habitad: " << animal->getHabitad() << endl;
-	out << "Raza: " << animal->getRaza() << endl;
-	out << "Tamaño: " << animal->getTamaño() << endl;
-	out << "Tamaño de los dientes " << animal->getTamañoDientes() << endl;
+	animal.print();
 	return out;
-}*/
+}
+

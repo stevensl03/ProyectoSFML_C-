@@ -33,6 +33,7 @@
     <TypeIdentifier>
       <HashCode>AAAACgABAAAAACAAEAIAAAAAAAAAAAQAAAAAAAgGAAA=</HashCode>
       <FileName>Enemy2.h</FileName>
+      <NewMemberFileName>Enemy.h</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Item" Collapsed="true">

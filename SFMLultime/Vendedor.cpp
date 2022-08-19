@@ -5,22 +5,28 @@ Vendedor::Vendedor() : Empleados()
 	tienda = "";
 }
 
-Vendedor::Vendedor(string nombre, string apellido, string labor, string tienda) : Empleados(nombre, apellido, labor)
-{
+Vendedor::Vendedor(string nombre, string apellido, string genero, int edad, string labor, string tienda) : Empleados(nombre, apellido, genero, edad, labor){
 	this->tienda = tienda;
 }
 
-string Vendedor::gettienda()
-{
-	return tienda;
+void Vendedor::print(){
+	Empleados::print();
+	cout << "Nombre de tienda: " << getTienda() << endl;
 }
 
-void Vendedor::settienda(string tienda)
-{
-	this->tienda = tienda;
-}
+
+
+string Vendedor::getTienda(){	return tienda;}
+void Vendedor::setTienda(string tienda){	this->tienda = tienda;}
 
 void Vendedor::vender()
 {
 	cout << "Te estoy vendiendo cosas" << endl;
 }
+
+ostream& operator<<(ostream& out, Vendedor& persona)
+{
+	persona.print();
+	return out;
+}
+

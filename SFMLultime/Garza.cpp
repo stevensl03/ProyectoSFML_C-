@@ -64,14 +64,11 @@ void Garza::desarrollar()
 	cout << "EL huevo de garza se esta desarrolando. " << endl;
 }
 
-/*ostream& operator<<(ostream& out, Garza* animal)
+
+
+ostream& operator<<(ostream& out, Garza& animal)
 {
-	out << "Tipo de animal: " << animal->getTipoAnimal() << endl;
-	out << "Peso: " << animal->getPeso() << endl;
-	out << "Habitad: " << animal->getHabitad() << endl;
-	out << "Raza: " << animal->getRaza() << endl;
-	out << "Tamaño: " << animal->getTamaño() << endl;
-	out << "Largo de cuello " << animal->getLargoCuello() << endl;
+	animal.print();
 	return out;
-}*/
+}
 

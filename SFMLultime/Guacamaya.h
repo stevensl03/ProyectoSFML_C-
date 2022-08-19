@@ -39,6 +39,8 @@ public:
 	void reproducir()override;
 	void desarrollar()override;
 
+	friend ostream& operator<<(ostream& out, Guacamaya& animal);
+
 };
 
 #endif // GUACAMAYA_H

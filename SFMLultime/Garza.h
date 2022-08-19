@@ -37,7 +37,8 @@ public:
 	void desarrollar()override;
 
 
-	//friend ostream& operator<<(ostream& out, Garza* animal);
+	friend ostream& operator<<(ostream& out, Garza& animal);
+
 
 };
 

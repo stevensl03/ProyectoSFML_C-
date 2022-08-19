@@ -47,8 +47,7 @@ void Animal::setTtamaño(float tamaño) { this->tamaño = tamaño; }
 
 
 
-//sobrecargas
-/*
+
 ostream& operator<<(ostream& out, Animal* animal)
 {
 	out << "Tipo de animal: " << animal->getTipoAnimal() << endl;
@@ -78,5 +77,5 @@ istream& operator>>(istream& input, Animal& animal)
 	input >> animal.tamaño;
 
 	return input;
-}*/
+}
 

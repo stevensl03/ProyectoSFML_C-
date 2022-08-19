@@ -33,6 +33,8 @@ public:
 
 	void devorar()override;
 	void atacar()override;
+	friend ostream& operator<<(ostream& out, Leon& animal);
+
 
 };
 

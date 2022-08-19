@@ -54,3 +54,10 @@ void Oso::atacar()
 {
 	cout << "EL oso esta atacando. " << endl;
 }
+
+ostream& operator<<(ostream& out, Oso& animal)
+{
+	animal.print();
+	return out;
+}
+

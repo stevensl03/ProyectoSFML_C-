@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Animacion" Collapsed="true">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animacion.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Collisionable" Collapsed="true">
+    <Position X="7.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Collisionable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControllerManager" Collapsed="true">
+    <Position X="20" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAEAABAAAAAAAABAAAAAA=</HashCode>
+      <FileName>ControllerManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy" Collapsed="true">
+    <Position X="0.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACgABAAAAACAAEAIAAAAAAAAAAAQAAAAAAAgGAAA=</HashCode>
+      <FileName>Enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy2" Collapsed="true">
+    <Position X="2.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACgABAAAAACAAEAIAAAAAAAAAAAQAAAAAAAgGAAA=</HashCode>
+      <FileName>Enemy2.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Item" Collapsed="true">
+    <Position X="7.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAIAAAAEAAAAAAQAAAAAAAAEAAA=</HashCode>
+      <FileName>Item.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Item2" Collapsed="true">
+    <Position X="11.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABCAAAAAAAAAAAAAIAAAAAAAAAAAQAAAAAAAAEAAA=</HashCode>
+      <FileName>Item_2.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Juego" Collapsed="true">
+    <Position X="20" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAYMIAEAKBEAAQkQQBKABIkAABiEAAAAAhhM0kECMGA=</HashCode>
+      <FileName>Juego.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Menu" Collapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIBBAAAAAAAAAAIAAAgAAAAIAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Menu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyEntity" Collapsed="true">
+    <Position X="7.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAYAABQAAAAAAAAIAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>MyEntity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Personaje" Collapsed="true">
+    <Position X="5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAiAAAEgIABAAAAAIACAIAAAAAAAQAAABBgAEEAAA=</HashCode>
+      <FileName>Personaje.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Power" Collapsed="true">
+    <Position X="9.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAIAAAAAAAAAAAQBAAAAAAAEAAA=</HashCode>
+      <FileName>Power.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyectil" Collapsed="true">
+    <Position X="14" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAABAAAAAAAAAgIACAAAAEAAAAQAAAAgAAAEBAA=</HashCode>
+      <FileName>Proyectil.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aguila" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAUAAIABAQAAgAACAAAAAoCAAAAIAwAA=</HashCode>
+      <FileName>Aguila.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Animal" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAxAgEAEAAgABMAAAAABAAAAAAIAAAAAIAABABAAAAA=</HashCode>
+      <FileName>Animal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Aseador" Collapsed="true">
+    <Position X="0.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEQAAAAAAAAAIAEAAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Aseador.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cebra" Collapsed="true">
+    <Position X="12.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQAAAQEAMCAAAAAAAASAAACAIAAAAAAAABA=</HashCode>
+      <FileName>Cebra.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Celador" Collapsed="true">
+    <Position X="2.75" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAACAACgAIAAAAAAQAAAAAACAA=</HashCode>
+      <FileName>Celador.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cocodrilo" Collapsed="true">
+    <Position X="12.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAABAAAAAAAAAIQAAEAAEAAAEQAAAAAAAAQAA=</HashCode>
+      <FileName>Cocodrilo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cuidador" Collapsed="true">
+    <Position X="9.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQABAAAAAAAAAAAAAAAAAAAAAAAAAAQRAAAAAAAAAA=</HashCode>
+      <FileName>Cuidador.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Empleados" Collapsed="true">
+    <Position X="5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAQAAA=</HashCode>
+      <FileName>Empleados.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Garza" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAAAUAQIAFAQAAAAACAAAAAIAAAAAAAwgA=</HashCode>
+      <FileName>Garza.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Guacamaya" Collapsed="true">
+    <Position X="6.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAIAAAAgUAAICAAQAAAAASAAIAAIAAAAAAAQAA=</HashCode>
+      <FileName>Guacamaya.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HabitadTropical" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAgAAAAAAAAACCAAAAAAAAAAACAAAAAAAEAAAAAA=</HashCode>
+      <FileName>HabitadTropical.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hipopotamo" Collapsed="true">
+    <Position X="6.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAACAEAAAAAIACAAABEAgAAAAAAAAACAAAA=</HashCode>
+      <FileName>Hipopotamo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Historia" Collapsed="true">
+    <Position X="18.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAABQoAAAAAAACYAAAgECDQAQAACAAEIBAAAICA=</HashCode>
+      <FileName>Historia.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazAcuaticos" Collapsed="true">
+    <Position X="1" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InterfazAcuaticos.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazAereos" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InterfazAereos.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazAnimal" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAIAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>InterfazAnimal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazCarnivoros" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>InterfazCarnivoros.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazHervivoros" Collapsed="true">
+    <Position X="3.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InterfazHervivoros.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazMamiferos" Collapsed="true">
+    <Position X="3.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InterfazMamiferos.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazOviparos" Collapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>InterfazOviparos.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InterfazTerrestres" Collapsed="true">
+    <Position X="15.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAABA=</HashCode>
+      <FileName>InterfazTerrestres.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Leon" Collapsed="true">
+    <Position X="9.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAAAAAAQQAYABAAAAAAAAAAACAIAAAAgAAgBA=</HashCode>
+      <FileName>Leon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Oso" Collapsed="true">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEQABAAAAAQAAIABAAAAAAAAAAQCAIAAAAAAAgBA=</HashCode>
+      <FileName>Oso.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Persona" Collapsed="true">
+    <Position X="6" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAAAAAAQAAACAAAAAwAAIAAACAAACACIGAAAEgAA=</HashCode>
+      <FileName>Persona.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pinguino" Collapsed="true">
+    <Position X="9.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAIQAAAAAVABAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Pinguino.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vendedor" Collapsed="true">
+    <Position X="5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAACAAAgAgAABAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Vendedor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Veterinario" Collapsed="true">
+    <Position X="7.25" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAAAAAAEAAAAAAIAAAAAAAAAQAAAAAAAAEAAA=</HashCode>
+      <FileName>Veterinario.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Visitante">
+    <Position X="11.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAAAAAAAQAAAAABAAAAAAAAAAAAACAAAAABAA=</HashCode>
+      <FileName>Visitante.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="PersonajeState" Collapsed="true">
+    <Position X="18.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAABAAIAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Personaje.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

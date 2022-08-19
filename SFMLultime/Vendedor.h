@@ -10,12 +10,17 @@ class Vendedor : public Empleados {
 
 public:
 	Vendedor();
-	Vendedor(string nombre, string apellido, string labor, string tienda);
+	Vendedor(string nombre, string apellido, string genero, int edad, string labor, string tienda);
 
-	string gettienda();
-	void settienda(string tienda);
+	void print()override;
+
+	string getTienda();
+	void setTienda(string tienda);
 
 	void vender();
+
+	friend ostream& operator<<(ostream& out, Vendedor& persona);
+
 
 };
 #endif

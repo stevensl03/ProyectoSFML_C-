@@ -40,14 +40,11 @@ void Cocodrilo::desarrollar()
 }
 
 
-/*
-ostream& operator<<(ostream& out, Cocodrilo* animal)
+
+
+ostream& operator<<(ostream& out, Cocodrilo& animal)
 {
-	out << "Tipo de animal: " << animal->getTipoAnimal() << endl;
-	out << "Peso: " << animal->getPeso() << endl;
-	out << "Habitad: " << animal->getHabitad() << endl;
-	out << "Raza: " << animal->getRaza() << endl;
-	out << "Tamaño: " << animal->getTamaño() << endl;
-	out << "Largo de cola " << animal->getLargoCola() << endl;
+	animal.print();
 	return out;
-}*/
+}
+

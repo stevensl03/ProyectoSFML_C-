@@ -7,16 +7,20 @@
 
 class Visitante : public Persona {
 
-	int edad;
+	float dineroGastado;
 
 public:
 	Visitante();
-	Visitante(string nombre, string apellido, int edad);
+	Visitante(string nombre, string apellido, string genero, int edad, float dineroGastado);
 
-	int getedad();
-	void setedad(int edad);
+	void print() override;
 
+	float getDineroGastado();
+	void setDineroGastado(float dineroGastado);
 	void fotografiar();
+
+	friend ostream& operator<<(ostream& out, Visitante& persona);
+
 
 };
 #endif

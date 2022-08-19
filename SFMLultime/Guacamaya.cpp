@@ -64,3 +64,10 @@ void Guacamaya::desarrollar()
 {
 	cout << "El huevo de guacamaya se esta desarrolando. " << endl;
 }
+
+ostream& operator<<(ostream& out, Guacamaya& animal)
+{
+	animal.print();
+	return out;
+}
+

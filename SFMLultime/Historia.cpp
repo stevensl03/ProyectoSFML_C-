@@ -12,6 +12,15 @@ Historia::Historia()
 	 oso = new Oso(7, 140, 150.f, "Bosque", "PeligrOSO", "EsponjOSO");
 	 pinguino  = new Pinguino(2, 20, 40.f, "Antartida", "Real", "Amarillo");
 
+	 veterinatio = new Veterinario("Juan", "Torres", "Masculino", 37, "Veterinario", "Manos rapidas");
+	 vendedor = new Vendedor("Manuel", "Lopez", "Masculino", 56, "Comerciante", "MkLoMejor");
+	 cuidador = new Cuidador("Lina", "Fernandez", "Femenino", 27, "Cuidadora", 3);
+	 celador = new Celador("Felipe", "Diaz", "Masculino", 27, "vigilante", "Entrada");
+	 aseador = new Aseador("Sofia", "Lidas", "Femenino", 65, "Aseadora", "pasillos");
+
+	 visitantes.push_back(new Visitante("Steven", "Sanchez", "Masculino", 20 , 200000));
+	 visitantes.push_back(new Visitante("Agustin", "Perez", "Masculino", 22, 25000));
+	 visitantes.push_back(new Visitante("Juliana", "LUZ", "Femenino", 27, 95500));
 	 exitMenu = true;
 	 opc = 0;
 }
@@ -22,6 +31,7 @@ Historia::Historia()
 
 void Historia::menu()
 {
+	
 	exitMenu = true;
 	printHistoria();
 
@@ -31,20 +41,41 @@ void Historia::menu()
 		system("clear");
 		cout << "MENU \n\n" << endl;
 		cout << "1. Informacion de los animales" << endl;
-		cout << "2. Informacion los empreados del zologico" << endl;
+		cout << "2. Informacion de los empleados" << endl;
+		cout << "3. Lista de todos los clientes." << endl;
+		cout << "" << endl;
 		cout << " 0. Salir" << endl;
 
-		while (opc < 0 || opc > 9) {
+		while (opc < 0 || opc > 3) {
 			cout << ">> ";  cin >> opc;
 		}
 
-		if (opc == 1) {
-			printAnimales();
-		}
-
-		if (opc == 0) {
+		switch (opc)
+		{
+		case 0:
 			exitMenu = false;
 			system("clear");
+			break;
+
+		case 1:
+			printAnimales();
+			break;
+
+		case 2:
+			printEmpleados();
+			break;
+
+		case 3:
+			system("clear");
+			for (Visitante *f : visitantes) {
+				cout << *f << endl;;
+			}
+			system("pause");
+			break;
+
+
+		default:
+			break;
 		}
 
 	}
@@ -199,22 +230,63 @@ void Historia::printAnimales()
 
 void Historia::printEmpleados()
 {
+	opc = 0;
+	system("clear");
+	cout << "MENU \n\n" << endl;
+	cout << "Informacion de los trabajadores: " << endl;
+	cout << " 1. Veterinario " << endl;
+	cout << " 2. Vendedor " << endl;
+	cout << " 3. Cuidador " << endl;
+	cout << " 4. Celador " << endl;
+	cout << " 5. Aseador " << endl;
+
+
+
+	while (opc <= 0 || opc > 5) {
+		cout << ">> ";  cin >> opc;
+	}
+
+	switch (opc)
+	{
+
+	case 1:
+		system("clear");
+		veterinatio->print();
+		system("pause");
+		break;
+
+	case 2:
+		system("clear");
+		vendedor->print();
+		system("pause");
+		break;
+
+	case 3:
+		system("clear");
+		cuidador->print();
+		system("pause");
+
+		break;
+
+	case 4:
+		system("clear");
+		celador->print();
+		system("pause");
+		break;
+
+	case 5:
+		system("clear");
+		aseador->print();
+		system("pause");
+		break;
+
+	default:
+		break;
+	}
 
 }
 
 
-
-
-
-Aguila Historia::getAguila(){ return *aguila;}
-Cebra Historia::getCebra(){	return *zebra;}
-Cocodrilo Historia::getCocodrilo(){	return *cocodrilo;}
-Garza Historia::getGarza(){	return *garza;}
-Guacamaya Historia::getGuacamaya(){	return *guacamaya;}
-Hipopotamo Historia::getHipopotamo(){ return *hipopotamo;}
-Leon Historia::getLeon(){ return *leon;}
-Oso Historia::getOso(){ return *oso;}
-Pinguino Historia::getPinguino(){ return *pinguino;}
 
 
 
