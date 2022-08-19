@@ -20,6 +20,8 @@ public:
 	string getTipoComida();
 	void setTipoComida(string tipoComida);
 
+	void print()override;
+
 	void dormir()override;
 	void jugar()override;
 	void comer()override;

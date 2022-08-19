@@ -13,6 +13,13 @@ Cebra::Cebra(int tipoAnimal, int peso, float tamaño, string habitad, string raza
 string Cebra::getTipoComida() { return tipoComida; }
 void Cebra::setTipoComida(string tipoComida) { this->tipoComida = tipoComida; }
 
+void Cebra::print()
+{
+    cout << "--Informacion de la zebra-- \n\n" << endl;;
+    Animal::print();
+    cout << "Tipo de comida: " << getTipoComida() << endl << endl;
+}
+
 void Cebra::dormir()
 {
     cout << "La cebra esta durmiendo. " << endl;

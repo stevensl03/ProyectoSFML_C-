@@ -129,38 +129,35 @@
     <ClCompile Include="Cocodrilo.cpp">
       <Filter>Archivos de origen\Historia</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\personas\Aseador.cpp">
+    <ClCompile Include="Visitante.cpp">
       <Filter>Archivos de origen\Historia</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\personas\Celador.cpp">
+    <ClCompile Include="Veterinario.cpp">
       <Filter>Archivos de origen\Historia</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\personas\Cuidador.cpp">
+    <ClCompile Include="Vendedor.cpp">
       <Filter>Archivos de origen\Historia</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\personas\Empleados.cpp">
-      <Filter>Archivos de origen\Historia</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\personas\Persona.cpp">
-      <Filter>Archivos de origen\Historia</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\personas\Vendedor.cpp">
-      <Filter>Archivos de origen\Historia</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\personas\Veterinario.cpp">
-      <Filter>Archivos de origen\Historia</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\Downloads\personas\Visitante.cpp">
+    <ClCompile Include="Persona.cpp">
       <Filter>Archivos de origen\Historia</Filter>
     </ClCompile>
     <ClCompile Include="HabitadTropical.cpp">
-      <Filter>Archivos de origen</Filter>
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="Empleados.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="Cuidador.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="Celador.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
+    </ClCompile>
+    <ClCompile Include="Aseador.cpp">
+      <Filter>Archivos de origen\Historia</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Aguila.h">
-      <Filter>Archivos de encabezado\Historia</Filter>
-    </ClInclude>
     <ClInclude Include="Proyectil.h">
       <Filter>Archivos de encabezado\Juego</Filter>
     </ClInclude>
@@ -257,35 +254,39 @@
     <ClInclude Include="Pinguino.h">
       <Filter>Archivos de encabezado\Historia</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Downloads\personas\Aseador.h">
+    <ClInclude Include="Visitante.h">
       <Filter>Archivos de encabezado\Historia</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Downloads\personas\Celador.h">
+    <ClInclude Include="Veterinario.h">
       <Filter>Archivos de encabezado\Historia</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Downloads\personas\Cuidador.h">
+    <ClInclude Include="Vendedor.h">
       <Filter>Archivos de encabezado\Historia</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Downloads\personas\Empleados.h">
-      <Filter>Archivos de encabezado\Historia</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Downloads\personas\Persona.h">
-      <Filter>Archivos de encabezado\Historia</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Downloads\personas\Vendedor.h">
-      <Filter>Archivos de encabezado\Historia</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Downloads\personas\Veterinario.h">
-      <Filter>Archivos de encabezado\Historia</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Downloads\personas\Visitante.h">
+    <ClInclude Include="Persona.h">
       <Filter>Archivos de encabezado\Historia</Filter>
     </ClInclude>
     <ClInclude Include="HabitadTropical.h">
-      <Filter>Archivos de encabezado</Filter>
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="Empleados.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuidador.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="Aseador.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="Celador.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
+    </ClInclude>
+    <ClInclude Include="Aguila.h">
+      <Filter>Archivos de encabezado\Historia</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
 </Project>

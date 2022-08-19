@@ -144,7 +144,7 @@ void Juego::procesarEventos()
 
 				case 1:
 					
-					historia.printHistoria();
+					historia.menu();
 					break;
 
 				case 2:

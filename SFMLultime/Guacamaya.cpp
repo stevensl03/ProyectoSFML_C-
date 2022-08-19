@@ -13,6 +13,13 @@ Guacamaya::Guacamaya(int tipoAnimal, int peso, float tamaño, string habitad, str
 int Guacamaya::getEsperanzaVida() { return esperanzaVida; }
 void Guacamaya::setEsperanzaVida(int esperanzaVida) { this->esperanzaVida = esperanzaVida; }
 
+void Guacamaya::print()
+{
+	cout << "--Informacion del Guacamaya-- \n\n" << endl;;
+	Animal::print();
+	cout << "Esperanza de vida: " << getEsperanzaVida() <<endl << endl;
+}
+
 void Guacamaya::dormir()
 {
 	cout << "La guacamaya esta durmiendo. " << endl;

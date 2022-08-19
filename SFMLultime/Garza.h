@@ -21,6 +21,8 @@ public:
 	int getLargoCuello();
 	void setLargoCuello(int largoCuello);
 
+	void print() override;
+
 	void dormir()override;
 	void jugar()override;
 	void comer()override;

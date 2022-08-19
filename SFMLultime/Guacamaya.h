@@ -24,6 +24,8 @@ public:
 	int getEsperanzaVida();
 	void setEsperanzaVida(int esperanzaVida);
 
+	void print() override;
+
 	void dormir()override;
 	void jugar()override;
 	void comer()override;

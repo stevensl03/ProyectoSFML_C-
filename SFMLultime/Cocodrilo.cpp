@@ -12,6 +12,13 @@ Cocodrilo::Cocodrilo(int tipoAnimal, int peso, float tamaño, string habitad, str
 int Cocodrilo::getLargoCola() { return largoCola; }
 void Cocodrilo::setLargoCola(int largoCola) { this->largoCola = largoCola; }
 
+void Cocodrilo::print()
+{
+	cout << "--Informacion del cocodrilo-- \n\n" << endl;;
+	Animal::print();
+	cout << "Largo de cola: " << getLargoCola() << endl << endl;
+}
+
 void Cocodrilo::nadar()
 {
 	cout << "estoy nadando" << endl;

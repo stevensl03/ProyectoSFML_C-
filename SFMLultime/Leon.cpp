@@ -12,6 +12,13 @@ Leon::Leon(int tipoAnimal, int peso, float tamaño, string habitad, string raza, 
 int Leon::getTamañoMelena() { return tamañoMelena; }
 void Leon::setTamañoMelena(int tamañoMelena) { this->tamañoMelena = tamañoMelena; }
 
+void Leon::print()
+{
+    cout << "--Informacion del leon-- \n\n" << endl;
+    Animal::print();
+    cout << "Tamaño de la melena: " << getTamañoMelena() << endl << endl;
+}
+
 void Leon::dormir()
 {
     cout << "EL leon esta durmiendo. " << endl;

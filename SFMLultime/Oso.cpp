@@ -13,6 +13,13 @@ Oso::Oso(int tipoAnimal, int peso, float tamaño, string habitad, string raza, st
 string Oso::getTipoPelaje() { return tipoPelaje; }
 void Oso::setTipoPelaje(string TipoPelaje) { this->tipoPelaje = tipoPelaje; }
 
+void Oso::print()
+{
+	cout << "--Informacion del Oso-- \n\n" << endl;
+	Animal::print();
+	cout << "Tipo de pelaje: " << getTipoPelaje() << endl << endl;
+}
+
 void Oso::dormir()
 {
 	cout << "EL oso esta durmiendo. " << endl;

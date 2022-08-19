@@ -22,6 +22,8 @@ public:
 	string getColorPlumaje();
 	void setColorPlumaje(string colorPlumaje);
 
+	void print() override;
+
 	 void dormir()override;
 	 void jugar()override;
 	 void comer()override;

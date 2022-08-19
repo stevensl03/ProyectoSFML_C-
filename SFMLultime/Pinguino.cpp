@@ -14,6 +14,13 @@ Pinguino::Pinguino(int tipoAnimal, int peso, float tamaño, string habitad, strin
 string Pinguino::getColorPecho() { return ColorPecho; }
 void Pinguino::setColorPecho(string ColorPecho) { this->ColorPecho = ColorPecho; }
 
+void Pinguino::print()
+{
+	cout << "--Informacion del pinguino-- \n\n" << endl;
+	Animal::print();
+	cout << "Color del pecho: " << getColorPecho() << endl << endl;
+}
+
 void Pinguino::nadar()
 {
 	cout << "estoy nadando" << endl;

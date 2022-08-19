@@ -22,6 +22,8 @@ public:
 	string getTipoPelaje();
 	void setTipoPelaje(string TipoPelaje);
 
+	void print() override;
+
 	void dormir()override;
 	void jugar()override;
 	void comer()override;

@@ -132,21 +132,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Downloads\personas\Aseador.cpp" />
-    <ClCompile Include="..\..\..\..\Downloads\personas\Celador.cpp" />
-    <ClCompile Include="..\..\..\..\Downloads\personas\Cuidador.cpp" />
-    <ClCompile Include="..\..\..\..\Downloads\personas\Empleados.cpp" />
-    <ClCompile Include="..\..\..\..\Downloads\personas\Persona.cpp" />
-    <ClCompile Include="..\..\..\..\Downloads\personas\Vendedor.cpp" />
-    <ClCompile Include="..\..\..\..\Downloads\personas\Veterinario.cpp" />
-    <ClCompile Include="..\..\..\..\Downloads\personas\Visitante.cpp" />
     <ClCompile Include="Aguila.cpp" />
     <ClCompile Include="Animacion.cpp" />
     <ClCompile Include="Animal.cpp" />
+    <ClCompile Include="Aseador.cpp" />
     <ClCompile Include="Cebra.cpp" />
+    <ClCompile Include="Celador.cpp" />
     <ClCompile Include="Cocodrilo.cpp" />
     <ClCompile Include="Collisionable.cpp" />
     <ClCompile Include="ControllerManager.cpp" />
+    <ClCompile Include="Cuidador.cpp" />
+    <ClCompile Include="Empleados.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Enemy2.cpp" />
     <ClCompile Include="Garza.cpp" />
@@ -170,28 +166,28 @@
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="MyEntity.cpp" />
     <ClCompile Include="Oso.cpp" />
+    <ClCompile Include="Persona.cpp" />
     <ClCompile Include="Personaje.cpp" />
     <ClCompile Include="Pinguino.cpp" />
     <ClCompile Include="Power.cpp" />
     <ClCompile Include="Proyectil.cpp" />
+    <ClCompile Include="Vendedor.cpp" />
+    <ClCompile Include="Veterinario.cpp" />
+    <ClCompile Include="Visitante.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Downloads\personas\Aseador.h" />
-    <ClInclude Include="..\..\..\..\Downloads\personas\Celador.h" />
-    <ClInclude Include="..\..\..\..\Downloads\personas\Cuidador.h" />
-    <ClInclude Include="..\..\..\..\Downloads\personas\Empleados.h" />
-    <ClInclude Include="..\..\..\..\Downloads\personas\Persona.h" />
-    <ClInclude Include="..\..\..\..\Downloads\personas\Vendedor.h" />
-    <ClInclude Include="..\..\..\..\Downloads\personas\Veterinario.h" />
-    <ClInclude Include="..\..\..\..\Downloads\personas\Visitante.h" />
     <ClInclude Include="Aguila.h" />
     <ClInclude Include="Animacion.h" />
     <ClInclude Include="Animal.h" />
+    <ClInclude Include="Aseador.h" />
     <ClInclude Include="Cebra.h" />
+    <ClInclude Include="Celador.h" />
     <ClInclude Include="Cocodrilo.h" />
     <ClInclude Include="Collisionable.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="ControllerManager.h" />
+    <ClInclude Include="Cuidador.h" />
+    <ClInclude Include="Empleados.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Enemy2.h" />
     <ClInclude Include="Garza.h" />
@@ -214,13 +210,18 @@
     <ClInclude Include="Menu.h" />
     <ClInclude Include="MyEntity.h" />
     <ClInclude Include="Oso.h" />
+    <ClInclude Include="Persona.h" />
     <ClInclude Include="Personaje.h" />
     <ClInclude Include="Pinguino.h" />
     <ClInclude Include="Power.h" />
     <ClInclude Include="Proyectil.h" />
+    <ClInclude Include="Vendedor.h" />
+    <ClInclude Include="Veterinario.h" />
+    <ClInclude Include="Visitante.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

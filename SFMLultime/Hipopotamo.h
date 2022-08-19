@@ -20,6 +20,8 @@ public:
 	int getTamañoDientes();
 	void setTamañoDientes(int Peso);
 
+	void print() override; 
+
 	void nadar()override;
 	void respirar()override;
 	void nacer()override;

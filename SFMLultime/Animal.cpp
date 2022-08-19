@@ -11,6 +11,16 @@ Animal::Animal(int tipoAnimal, int peso, float tamaño, string habitad, string ra
 	this->raza = raza;
 }
 
+void Animal::print()
+{
+	void printAnimales();
+	cout << "Tipo de animal: " << getTipoAnimal() << endl;
+	cout << "Peso: " << getPeso() << endl;
+	cout << "Habitad: " << getHabitad() << endl;
+	cout << "Raza: " << getRaza() << endl;
+	cout << "Tamaño: " << getTamaño() << endl;
+}
+
 //Tipo Animal
 int Animal::getTipoAnimal() { return tipoAnimal; }
 void Animal::setTipoAnimal(int tipoAnimal) { this->tipoAnimal = tipoAnimal; }
@@ -24,7 +34,7 @@ string Animal::getHabitad() { return habitad; }
 void Animal::setHabitad(string habitad) { this->habitad = habitad; }
 
 //Raza
-string Animal::getRaza() { return string(); }
+string Animal::getRaza() { return raza; }
 void Animal::setRaza(string raza) { this->raza = raza; }
 
 //Tamaño

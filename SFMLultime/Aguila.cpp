@@ -13,6 +13,14 @@ Aguila::Aguila(int tipoAnimal, int peso, float tamaño, string habitad, string ra
 string Aguila::getColorPlumaje() { return ColorPlumaje; }
 void Aguila::setColorPlumaje(string colorPlumaje) { this->ColorPlumaje = colorPlumaje; }
 
+void Aguila::print()
+{
+	cout << "--Informacion del aguila-- \n\n" << endl;;
+	Animal::print();
+	cout << "Color del plumaje: " << getColorPlumaje() << endl <<endl;
+}
+
+
 
 
 

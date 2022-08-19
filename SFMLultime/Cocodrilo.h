@@ -20,7 +20,7 @@ public:
 	int getLargoCola();
 	void setLargoCola(int largoCola);
 
-
+	void print() override;
 
 	void nadar()override;
 	void respirar()override;

@@ -13,8 +13,12 @@ class Animal {
 
 
 public:
-	Animal() :tipoAnimal(0), peso(0), tamaño(0.f), habitad(""), raza() {}
+	Animal() :tipoAnimal(0), peso(0), tamaño(0.f), habitad(""), raza("") {}
 	Animal(int tipoAnimal, int peso, float tamaño, string habitad, string raza);
+
+	//Metodos
+
+virtual void print();
 
 
 	//get and set 

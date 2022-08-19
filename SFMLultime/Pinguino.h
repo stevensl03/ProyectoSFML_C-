@@ -19,6 +19,8 @@ public:
 	string getColorPecho();
 	void setColorPecho(string ColorPecho);
 
+	void print()override;
+
 	void nadar()override;
 	void respirar()override;
 	void reproducir()override;

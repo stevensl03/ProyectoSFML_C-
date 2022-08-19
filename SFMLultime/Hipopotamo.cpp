@@ -13,6 +13,12 @@ Hipopotamo::Hipopotamo(int tipoAnimal, int peso, float tamaño, string habitad, s
 int Hipopotamo::getTamañoDientes() { return TamañoDientes; }
 void Hipopotamo::setTamañoDientes(int TamañoDientes) { this->TamañoDientes = TamañoDientes; }
 
+void Hipopotamo::print()
+{
+	Animal::print();
+	cout << "Tamaño de dientes: " << getTamañoDientes() << endl;
+}
+
 void Hipopotamo::nadar()
 {
 	cout << "estoy nadando" << endl;

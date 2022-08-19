@@ -12,6 +12,13 @@ Garza::Garza(int tipoAnimal, int peso, float tamaño, string habitad, string raza
 int Garza::getLargoCuello() { return largoCuello; }
 void Garza::setLargoCuello(int largoCuello) { this->largoCuello = largoCuello; }
 
+void Garza::print()
+{
+	cout << "--Informacion de la garza-- \n\n" << endl;;
+	Animal::print();
+	cout << "Largo de cuello: " << getLargoCuello() << endl << endl;
+}
+
 void Garza::dormir()
 {
 	cout << "La garza esta durmiendo. " << endl;

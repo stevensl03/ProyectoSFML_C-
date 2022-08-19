@@ -1,32 +1,7 @@
-﻿  Aseador.cpp
-  Celador.cpp
-  Cuidador.cpp
-  Empleados.cpp
-  Persona.cpp
-  Vendedor.cpp
-  Veterinario.cpp
-  Visitante.cpp
-  Juego.cpp
-C:\Users\david sanchez\Desktop\Proyecto\SFMLultime\SFMLultime\Juego.cpp(10,58): warning C4244: 'argumento': conversión de 'T' a 'float'; posible pérdida de datos
-          with
-          [
-              T=unsigned int
-          ]
-C:\Users\david sanchez\Desktop\Proyecto\SFMLultime\SFMLultime\Juego.cpp(10,36): warning C4244: 'argumento': conversión de 'T' a 'float'; posible pérdida de datos
-          with
-          [
-              T=unsigned int
-          ]
-C:\Users\david sanchez\Desktop\Proyecto\SFMLultime\SFMLultime\Juego.cpp(24,49): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\david sanchez\Desktop\Proyecto\SFMLultime\SFMLultime\Juego.cpp(315,43): warning C4244: 'argumento': conversión de 'T' a 'float'; posible pérdida de datos
-          with
-          [
-              T=int
-          ]
-C:\Users\david sanchez\Desktop\Proyecto\SFMLultime\SFMLultime\Juego.cpp(318,67): warning C4244: 'argumento': conversión de 'T' a 'float'; posible pérdida de datos
-          with
-          [
-              T=int
-          ]
+﻿  Garza.cpp
+  Guacamaya.cpp
+  Leon.cpp
+  Oso.cpp
+  Pinguino.cpp
   Generando código...
   SFMLultime.vcxproj -> C:\Users\david sanchez\Desktop\Proyecto\SFMLultime\x64\Debug\SFMLultime.exe

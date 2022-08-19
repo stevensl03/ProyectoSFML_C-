@@ -22,6 +22,8 @@ public:
 	int getTamañoMelena();
 	void setTamañoMelena(int tamañoMelena);
 
+	void print() override;
+
 	void dormir()override;
 	void jugar()override;
 	void comer()override;

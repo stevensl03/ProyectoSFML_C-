@@ -16,6 +16,6 @@ class HabitadTropical
 	vector<Aguila*> aguilas;
 public:
 	HabitadTropical();
-	HabitadTropical(float tamaño)
+	HabitadTropical(float tamaño, string nivelVegetacion, vector<Oso*> osos, vector<Cocodrilo*> cocobrilos, vector<Aguila*> aguilas);
 };
 
